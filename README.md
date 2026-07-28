@@ -4,7 +4,7 @@
 
 Au Cameroun, l'accès rapide à des poches de sang compatibles reste un vrai
 problème de santé publique : les hôpitaux et les familles se retrouvent
-souvent à chercher un donneur dans l'urgence, sans réseau organisé pour les
+souvent à chercher un donneur dans l'urgence, sans réseau organisé pour les     
 mettre en relation.
 
 **VITA SANG** vise à terme à devenir cette plateforme de mise en relation
@@ -173,7 +173,4 @@ mieux ?".
 | Une seule signature par personne | Contrainte `UNIQUE` sur le téléphone |
 | Cohérence groupe sanguin / connaissance du groupe | Contrainte `CHECK` croisée |
 | Source toujours certaine, jamais devinée | UTM injectés au clic, pas de dépendance au `Referer` HTTP |
-| Accès admin sécurisé | Authentification Supabase Auth (mots de passe jamais stockés dans nos tables) |
-
-Le détail complet du schéma (tables, types, triggers, policies de sécurité)
-est disponible dans `vita_sang_schema.sql`.
+| Accès admin sécurisé | Authentification Supabase Auth (mots de passe jamais stockés dans nos tables).
