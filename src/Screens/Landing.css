@@ -107,13 +107,18 @@
 .stat-card-2 { top: 42%; right: -10%; }
 .stat-card-3 { bottom: -4%; left: -4%; }
 
-/* MOBILE POSITIONS : CARTES RAPPROCHÉES SUR PETIT ÉCRAN (< 640px) */
+/* MOYENS & PETITS ÉCRANS (< 868px) */
+@media (max-width: 868px) {
+  .stat-card-2 { top: 32%; right: -2%; }
+}
+
+/* PETITS ÉCRANS / MOBILE (< 640px) : SURÉLÉVATION DE "PRÊTS EN URGENCE" */
 @media (max-width: 640px) {
   .mascot-stage {
     max-width: 320px;
     min-height: 300px;
   }
-  .stat-card-1 { top: -2%; left: 0%; padding: 8px 14px; }
-  .stat-card-2 { top: 44%; right: 0%; padding: 8px 14px; }
+  .stat-card-1 { top: -4%; left: 0%; padding: 8px 14px; }
+  .stat-card-2 { top: 30%; right: 0%; padding: 8px 14px; }
   .stat-card-3 { bottom: -2%; left: 2%; padding: 8px 14px; }
 }
