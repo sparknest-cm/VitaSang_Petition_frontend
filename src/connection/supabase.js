@@ -1,5 +1,6 @@
-// URL du serveur API Backend Express VitaSang
-export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || ' https://vitasang-petition-backend.fly.dev/api';
+// URL du serveur API Backend Express VitaSang (Nettoyé des espaces parasites)
+const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.fly.dev/api';
+export const BACKEND_URL = rawUrl.trim();
 
 /**
  * 1. Enregistrer une signature (POST /api/sign)

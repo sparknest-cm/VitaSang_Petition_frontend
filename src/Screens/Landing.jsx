@@ -55,7 +55,7 @@ export default function Landing({ stats, onNavigate }) {
           </div>
         </div>
 
-        {/* Côté Droit : Mascotte Totalement Dégagée avec Cartes Harmoniquement Placées */}
+        {/* Côté Droit : Mascotte & Cartes Flottantes Adaptatives */}
         <div className="landing-right-panel">
           <div className="mascot-stage">
             {/* Mascotte Goutte de Sang au Centre */}
@@ -66,8 +66,8 @@ export default function Landing({ stats, onNavigate }) {
               <path d="M85 170 Q100 185 115 170" stroke="var(--tint)" strokeWidth="5" strokeLinecap="round" fill="none" opacity="0.9" />
             </svg>
 
-            {/* Carte 1 : Signatures (Haut Gauche) */}
-            <div className="stat-float-card animate-float-d1" style={{ top: '-6%', left: '-10%' }}>
+            {/* Carte 1 : Signatures */}
+            <div className="stat-float-card animate-float-d1 stat-card-1">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-[var(--tint)] flex items-center justify-center text-[var(--primary)] shrink-0">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 200 230">
@@ -83,8 +83,8 @@ export default function Landing({ stats, onNavigate }) {
               </div>
             </div>
 
-            {/* Carte 2 : Prêts en Urgence (Droite) */}
-            <div className="stat-float-card animate-float-d2" style={{ top: '42%', right: '-12%' }}>
+            {/* Carte 2 : Prêts en Urgence */}
+            <div className="stat-float-card animate-float-d2 stat-card-2">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 shrink-0">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -100,8 +100,8 @@ export default function Landing({ stats, onNavigate }) {
               </div>
             </div>
 
-            {/* Carte 3 : Ambassadeurs (Bas Gauche) */}
-            <div className="stat-float-card animate-float-d3" style={{ bottom: '-6%', left: '-6%' }}>
+            {/* Carte 3 : Ambassadeurs */}
+            <div className="stat-float-card animate-float-d3 stat-card-3">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 shrink-0">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">

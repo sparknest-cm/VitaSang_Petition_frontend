@@ -26,7 +26,6 @@
     min-height: 100vh;
     overflow-y: auto;
   }
-
   .landing-split-container {
     grid-template-columns: 1fr;
     height: auto;
@@ -75,14 +74,16 @@
   padding-top: 12px;
 }
 
+/* SCÈNE DE LA MASCOTTE & POSITIONNEMENT DES CARTES */
 .mascot-stage {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 360px;
-  min-height: 320px;
+  max-width: 460px;
+  min-height: 360px;
+  margin: 0 auto;
 }
 
 .stat-float-card {
@@ -93,9 +94,26 @@
   padding: 10px 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   transition: var(--transition-smooth);
+  z-index: 10;
+  white-space: nowrap;
 }
-
 .stat-float-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* DESKTOP POSITIONS HARMONIEUSES */
+.stat-card-1 { top: -4%; left: -8%; }
+.stat-card-2 { top: 42%; right: -10%; }
+.stat-card-3 { bottom: -4%; left: -4%; }
+
+/* MOBILE POSITIONS : CARTES RAPPROCHÉES SUR PETIT ÉCRAN (< 640px) */
+@media (max-width: 640px) {
+  .mascot-stage {
+    max-width: 320px;
+    min-height: 300px;
+  }
+  .stat-card-1 { top: -2%; left: 0%; padding: 8px 14px; }
+  .stat-card-2 { top: 44%; right: 0%; padding: 8px 14px; }
+  .stat-card-3 { bottom: -2%; left: 2%; padding: 8px 14px; }
 }
