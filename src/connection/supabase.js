@@ -1,6 +1,6 @@
-// URL du serveur API Backend Express VitaSang (Nettoyé des espaces parasites)
-const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.fly.dev/api';
-export const BACKEND_URL = rawUrl.trim();
+// Connection directe et exclusive au backend en ligne VitaSang sur Fly.dev
+const rawUrl = 'https://vitasang-petition-backend.fly.dev';
+export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
 
 /**
  * 1. Enregistrer une signature (POST /api/sign)
@@ -20,7 +20,7 @@ export const signerPetition = async (data) => {
     console.error('[FRONTEND API ERROR] Échec de communication avec le backend :', err.message);
   }
 
-  // Secours temporaire en cas de panne réseau
+  // Secours temporaire
   return {
     id: crypto.randomUUID(),
     nom: data.nom,
@@ -34,7 +34,7 @@ export const signerPetition = async (data) => {
 };
 
 /**
- * 2. Enregistrer un partage
+ * 2. Enregistrer un partage (POST /api/partage)
  */
 export const enregistrerPartage = async (signataireId, plateforme) => {
   try {
@@ -71,7 +71,7 @@ export const obtenirStatsGlobales = async () => {
 };
 
 /**
- * 4. Obtenir la liste des signataires réels
+ * 4. Obtenir la liste des signataires réels (GET /api/admin/signatures)
  */
 export const obtenirSignataires = async (filtres = {}) => {
   try {

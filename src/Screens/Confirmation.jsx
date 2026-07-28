@@ -8,8 +8,13 @@ export default function Confirmation({ registeredUser, onNavigate }) {
   const userFirstName = registeredUser?.prenom || 'Idriss';
   const referralCode = registeredUser?.code_parrainage || 'VS-A3F9K';
 
+  // Domaine officiel (remplace localhost si test local)
+  const BASE_FRONTEND_URL = typeof window !== 'undefined' && window.location.origin.includes('localhost')
+    ? 'https://vitasang.org'
+    : window.location.origin;
+
   const handleCopyLink = () => {
-    const personalLink = `${window.location.origin}/petition?ref=${referralCode}`;
+    const personalLink = `${BASE_FRONTEND_URL}/?ref=${referralCode}`;
     navigator.clipboard.writeText(personalLink);
     setCopied(true);
     if (registeredUser?.id) {
@@ -22,7 +27,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
     if (registeredUser?.id) {
       enregistrerPartage(registeredUser.id, plateforme);
     }
-    const personalLink = encodeURIComponent(`${window.location.origin}/petition?ref=${referralCode}&utm_source=${plateforme}`);
+    const personalLink = encodeURIComponent(`${BASE_FRONTEND_URL}/?ref=${referralCode}&utm_source=${plateforme}`);
     const text = encodeURIComponent("Rejoins-moi pour signer la pétition citoyenne VITA SANG et aidons à bâtir un réseau de donneurs de sang solide au Cameroun ! 🇨🇲 ❤️");
     
     let url = '';
@@ -50,7 +55,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
           <path d="M12 2C12 2 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-13-7-13z" fill="var(--primary)" />
         </svg>
 
-        {/* Message de Remerciement (Texte Maquette) + Espacement Accru */}
+        {/* Message de Remerciement */}
         <div className="thankyou-text-wrapper">
           <h1 className="font-display text-3xl font-bold mb-3 text-[var(--text)]">
             Merci, {userFirstName}.
@@ -69,7 +74,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
           {/* Pill Box du lien */}
           <div className="referral-pill-box">
             <span className="text-xs font-mono flex-1 text-left truncate text-[var(--primary)] select-all font-bold">
-              vitasang.org/petition?ref={referralCode}
+              {BASE_FRONTEND_URL.replace(/^https?:\/\//, '')}/?ref={referralCode}
             </span>
             <button
               onClick={handleCopyLink}
