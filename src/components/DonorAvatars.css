@@ -1,0 +1,37 @@
+.donor-avatars-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.avatar-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2.5px solid var(--surface);
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: -12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: var(--transition-smooth);
+}
+.avatar-bubble:first-child {
+  margin-left: 0;
+  z-index: 10;
+}
+.avatar-bubble:nth-child(2) {
+  z-index: 9;
+}
+.avatar-bubble:nth-child(3) {
+  z-index: 8;
+  background: linear-gradient(135deg, var(--primary), var(--gradient-end));
+  color: #ffffff;
+}
+
+.avatar-bubble:hover {
+  transform: translateY(-3px) scale(1.05);
+  z-index: 20 !important;
+}

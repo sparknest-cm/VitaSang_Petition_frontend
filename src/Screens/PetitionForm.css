@@ -1,0 +1,136 @@
+/* PETITION FORM SCREEN — 100% FULLSCREEN UNIFIED ORANGE GRADIENT BACKGROUND */
+.form-screen {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  color: var(--text);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.form-split-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 868px) {
+  .form-screen {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  .form-split-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+/* Côté Gauche : Transparent pour laisser passer le gradient unifié */
+.form-left-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 48px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+@media (max-width: 868px) {
+  .form-left-panel {
+    padding: 32px 20px 16px;
+  }
+}
+
+/* Côté Droit : Formulaire */
+.form-right-panel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+@media (max-width: 868px) {
+  .form-right-panel {
+    padding: 20px 16px 40px;
+  }
+}
+
+/* Card du Formulaire */
+.maquette-form-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--surface);
+  border: none;
+  border-radius: 28px;
+  padding: 28px;
+  text-align: left;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 868px) {
+  .maquette-form-card {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+}
+
+.form-label-left {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.form-input-custom {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13.5px;
+  transition: var(--transition-smooth);
+}
+
+.form-input-custom:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+/* Custom City Select Trigger */
+.city-field-box {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--tint);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition-smooth);
+}
+.city-field-box:hover {
+  border-color: var(--primary);
+}

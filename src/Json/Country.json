@@ -1,0 +1,2896 @@
+[
+  {
+    "geonameid": 2232593,
+    "nom": "Douala",
+    "nom_ascii": "Douala",
+    "autres_noms": [
+      "DLA",
+      "Douala",
+      "Doula",
+      "Dual",
+      "Duala",
+      "Dualao",
+      "Dóúala",
+      "Ntouala",
+      "dau'ala",
+      "douara",
+      "du a la",
+      "du xa la",
+      "du'ala",
+      "dualla",
+      "duwala",
+      "duyala",
+      "dwala",
+      "Ντουάλα",
+      "Дуала",
+      "דואלה",
+      "دوالا",
+      "डुआला",
+      "दौआला",
+      "ডুয়ালা",
+      "ਦੌਆਲਾ",
+      "ดูอาลา",
+      "ዱዋላ",
+      "ドゥアラ",
+      "杜阿拉",
+      "두알라"
+    ],
+    "latitude": 4.04827,
+    "longitude": 9.70428,
+    "code_type": "PPLA",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 1338082,
+    "altitude_m": 19,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2220957,
+    "nom": "Yaoundé",
+    "nom_ascii": "Yaounde",
+    "autres_noms": [
+      "Giaounte",
+      "Jande",
+      "Jaunde",
+      "Jaundeh",
+      "Jaundeo",
+      "Jaundė",
+      "Jaúnde",
+      "Jánde",
+      "YAO",
+      "Yaounde",
+      "Yaoundé",
+      "Yaunde",
+      "Yaundé",
+      "Yawunde",
+      "iaunde",
+      "ya wen de",
+      "ya'unde",
+      "yaunde",
+      "yavunte",
+      "yawndy",
+      "yaxunde",
+      "yaywndh",
+      "ye wen de",
+      "Γιαουντέ",
+      "Јаунде",
+      "Яунде",
+      "Яўндэ",
+      "Յաունդե",
+      "יאונדה",
+      "יאונדע",
+      "ياوندي",
+      "یاؤندے",
+      "یائونده",
+      "یائوندێ",
+      "یاونڈی",
+      "याउंदे",
+      "ਯਾਊਂਦੇ",
+      "யாவுண்டே",
+      "ยาอุนเด",
+      "ཡོན་དྷི།",
+      "იაუნდე",
+      "ያዉንዴ",
+      "ヤウンデ",
+      "耶溫得",
+      "雅温得",
+      "야운데"
+    ],
+    "latitude": 3.86667,
+    "longitude": 11.51667,
+    "code_type": "PPLC",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 1299369,
+    "altitude_m": 726,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234974,
+    "nom": "Bamenda",
+    "nom_ascii": "Bamenda",
+    "autres_noms": [
+      "BPC",
+      "Bamenda",
+      "Bamendy",
+      "ba men da",
+      "bamenda",
+      "bamenida",
+      "bamnda",
+      "bamnډa",
+      "bamynda",
+      "Баменда",
+      "Баменды",
+      "بامندا",
+      "بامنډا",
+      "بامیندا",
+      "बामेंडा",
+      "বামেন্ডা",
+      "ਬਾਮੇਂਡਾ",
+      "ባመንዳ",
+      "バメンダ",
+      "巴门达",
+      "바멘다"
+    ],
+    "latitude": 5.9597,
+    "longitude": 10.14597,
+    "code_type": "PPLA",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 420445,
+    "altitude_m": 1258,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235189,
+    "nom": "Bafoussam",
+    "nom_ascii": "Bafoussam",
+    "autres_noms": [
+      "BFX",
+      "Bafousam",
+      "Bafoussam",
+      "Bafusam",
+      "Bafusama",
+      "Bafusamas",
+      "Bafussam",
+      "Bafussama",
+      "Befoussam",
+      "ba fu sa mu",
+      "bafusamu",
+      "bafwsam",
+      "baphausama",
+      "baphusama",
+      "bapusam",
+      "baፍውsaም",
+      "Μπαφουσάμ",
+      "Бафусам",
+      "Бафуссам",
+      "Бафуссама",
+      "بافؤسام",
+      "بافوسام",
+      "बाफूसाम",
+      "বাফৌসাম",
+      "ਬਾਫੁੱਸਾਮ",
+      "ባፍውሳም",
+      "バフーサム",
+      "巴富薩姆",
+      "바푸삼"
+    ],
+    "latitude": 5.47775,
+    "longitude": 10.41759,
+    "code_type": "PPLA",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 373268,
+    "altitude_m": 1438,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228373,
+    "nom": "Maroua",
+    "nom_ascii": "Maroua",
+    "autres_noms": [
+      "MVR",
+      "Maroua",
+      "Marua",
+      "Marva",
+      "ma lu a",
+      "malua",
+      "maro'a",
+      "maroya",
+      "maru'a",
+      "marua",
+      "maruwa",
+      "marwa",
+      "marwwa",
+      "Μαρουά",
+      "Маруа",
+      "مارؤا",
+      "ماروا",
+      "مارووا",
+      "मारुआ",
+      "মারোয়া",
+      "ਮਾਰੋਆ",
+      "ማሩዋ",
+      "マルア",
+      "马鲁阿",
+      "마루아"
+    ],
+    "latitude": 10.59095,
+    "longitude": 14.31593,
+    "code_type": "PPLA",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 314122,
+    "altitude_m": 406,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224827,
+    "nom": "Ngaoundéré",
+    "nom_ascii": "Ngaoundere",
+    "autres_noms": [
+      "NGE",
+      "Ngaoundere",
+      "Ngaoundéré",
+      "Ngaundere",
+      "Ngaunderė",
+      "en gang dai lei",
+      "eung-gaundele",
+      "naga'undere",
+      "ngawndrh",
+      "nigaውnidere",
+      "nqawndry",
+      "nugaundere",
+      "nګawnډrh",
+      "Нгаундере",
+      "نقاوندري",
+      "نګاونډره",
+      "نگاؤندیرے",
+      "نگاوندره",
+      "नगाउंडेरे",
+      "নগাউন্ডেরে",
+      "ਨਗਾਉਂਡੇਰੇ",
+      "ንጋውንደሬ",
+      "ヌガウンデレ",
+      "恩冈代雷",
+      "응가운데레"
+    ],
+    "latitude": 7.32765,
+    "longitude": 13.58472,
+    "code_type": "PPLA",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 238196,
+    "altitude_m": 1128,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229752,
+    "nom": "Kumba",
+    "nom_ascii": "Kumba",
+    "autres_noms": [
+      "Kumba",
+      "Kumboj",
+      "Кумбой"
+    ],
+    "latitude": 4.6363,
+    "longitude": 9.4469,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 225046,
+    "altitude_m": 244,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223763,
+    "nom": "Nkongsamba",
+    "nom_ascii": "Nkongsamba",
+    "autres_noms": [
+      "NKS",
+      "Nkongsamba",
+      "Nkongsomba",
+      "Нконгсамба"
+    ],
+    "latitude": 4.9547,
+    "longitude": 9.9404,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 162309,
+    "altitude_m": 844,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233410,
+    "nom": "Buea",
+    "nom_ascii": "Buea",
+    "autres_noms": [
+      "Buea",
+      "Bueha",
+      "Bueja",
+      "Buéa",
+      "Buėja",
+      "bu ai ya",
+      "bu'a",
+      "buea",
+      "buya",
+      "bwya",
+      "bwyya",
+      "Буэа",
+      "بوئیا",
+      "بويا",
+      "بویا",
+      "बुआ",
+      "বুয়া",
+      "ਬੁਆ",
+      "ቡያ",
+      "ブエア",
+      "布埃亞",
+      "부에아"
+    ],
+    "latitude": 4.15342,
+    "longitude": 9.24231,
+    "code_type": "PPLA",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 140533,
+    "altitude_m": 859,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229798,
+    "nom": "Kousséri",
+    "nom_ascii": "Kousseri",
+    "autres_noms": [
+      "Fort Fureau",
+      "Fort-Foureau",
+      "Kousseri",
+      "Kousséri",
+      "Kusseri",
+      "alqswr‎",
+      "fwr fwrw",
+      "kwsyry",
+      "qswr",
+      "القصور‎",
+      "فور فورو",
+      "قصور",
+      "كوسيري"
+    ],
+    "latitude": 12.07689,
+    "longitude": 15.03063,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 139024,
+    "altitude_m": 300,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234359,
+    "nom": "Bertoua",
+    "nom_ascii": "Bertoua",
+    "autres_noms": [
+      "BTA",
+      "Bertoua",
+      "Bertua",
+      "Bertva",
+      "Gamane",
+      "baratu'a",
+      "bartu'a",
+      "bartuya",
+      "bei er tu a",
+      "beleutua",
+      "berituwa",
+      "berutoua",
+      "brtwa",
+      "byrtwa",
+      "bytwa",
+      "Μπερτουά",
+      "Бертуа",
+      "برتوا",
+      "بيرتوا",
+      "بیتؤا",
+      "बर्तुआ",
+      "বার্তুয়া",
+      "ਬਰਤੁਆ",
+      "በርቱዋ",
+      "ベルトゥア",
+      "贝尔图阿",
+      "베르투아"
+    ],
+    "latitude": 4.57728,
+    "longitude": 13.68459,
+    "code_type": "PPLA",
+    "code_region": "04",
+    "region": "Est",
+    "population": 137993,
+    "altitude_m": 665,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229411,
+    "nom": "Limbe",
+    "nom_ascii": "Limbe",
+    "autres_noms": [
+      "Limbe",
+      "Limbé",
+      "Limbė",
+      "VCC",
+      "Victoria",
+      "limbe",
+      "lin bei",
+      "rinbe",
+      "Лимбе",
+      "リンベ",
+      "林贝",
+      "림베"
+    ],
+    "latitude": 4.02356,
+    "longitude": 9.20607,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 131381,
+    "altitude_m": 74,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231506,
+    "nom": "Foumban",
+    "nom_ascii": "Foumban",
+    "autres_noms": [
+      "FOM",
+      "Foumbam",
+      "Foumban",
+      "Fumban",
+      "feng ban",
+      "Фумбан",
+      "豐班"
+    ],
+    "latitude": 5.72662,
+    "longitude": 10.89865,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 130287,
+    "altitude_m": 1179,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229748,
+    "nom": "Kumbo",
+    "nom_ascii": "Kumbo",
+    "autres_noms": [
+      "Kumbo"
+    ],
+    "latitude": 6.2,
+    "longitude": 10.66667,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 125124,
+    "altitude_m": 1687,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232239,
+    "nom": "Edéa",
+    "nom_ascii": "Edea",
+    "autres_noms": [
+      "Edea",
+      "Edeja",
+      "Edéa",
+      "Edėja",
+      "Ehdea",
+      "adya",
+      "ai dai a",
+      "edea",
+      "Édéa",
+      "Едеа",
+      "Эдеа",
+      "إديا",
+      "エデア",
+      "埃代阿"
+    ],
+    "latitude": 3.8,
+    "longitude": 10.13333,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 103861,
+    "altitude_m": 27,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232283,
+    "nom": "Ébolowa",
+    "nom_ascii": "Ebolowa",
+    "autres_noms": [
+      "EBW",
+      "Ebolova",
+      "Ebolowa",
+      "Ehbolova",
+      "abwlwa",
+      "abwlwwa",
+      "ebolo'a",
+      "ebolova",
+      "eboloya",
+      "eborowa",
+      "Ébolowa",
+      "ʿibolowa",
+      "Эболова",
+      "إبولووا",
+      "ابولوا",
+      "ابولووا",
+      "एबोलोवा",
+      "এবোলোয়া",
+      "ਏਬੋਲੋਆ",
+      "ኢቦሎዋ",
+      "エボロワ"
+    ],
+    "latitude": 2.9,
+    "longitude": 11.15,
+    "code_type": "PPLA",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 101363,
+    "altitude_m": 583,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232444,
+    "nom": "Dschang",
+    "nom_ascii": "Dschang",
+    "autres_noms": [
+      "Chang",
+      "DSC",
+      "Dchang",
+      "Djang",
+      "Dschang",
+      "Dzhang",
+      "Tchang",
+      "jan",
+      "jangu",
+      "jiang zhen",
+      "Джанг",
+      "Дсчанг",
+      "דסצ'אנג",
+      "جان",
+      "ジャング",
+      "姜鎮",
+      "姜镇"
+    ],
+    "latitude": 5.44397,
+    "longitude": 10.05332,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 99582,
+    "altitude_m": 1345,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221504,
+    "nom": "Tiko",
+    "nom_ascii": "Tiko",
+    "autres_noms": [
+      "TKC",
+      "Tiko"
+    ],
+    "latitude": 4.075,
+    "longitude": 9.36005,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 94836,
+    "altitude_m": 33,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229761,
+    "nom": "Kribi",
+    "nom_ascii": "Kribi",
+    "autres_noms": [
+      "KBI",
+      "Kribi",
+      "Криби"
+    ],
+    "latitude": 2.93725,
+    "longitude": 9.90765,
+    "code_type": "PPLA2",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 93482,
+    "altitude_m": 12,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228079,
+    "nom": "Mbalmayo",
+    "nom_ascii": "Mbalmayo",
+    "autres_noms": [
+      "Mbal'majo",
+      "Mbalmajo",
+      "Mbalmayo",
+      "Мбальмайо"
+    ],
+    "latitude": 3.51667,
+    "longitude": 11.5,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 82384,
+    "altitude_m": 663,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230876,
+    "nom": "Guider",
+    "nom_ascii": "Guider",
+    "autres_noms": [
+      "Gider",
+      "Guidder",
+      "Guider"
+    ],
+    "latitude": 9.9333,
+    "longitude": 13.94671,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 81608,
+    "altitude_m": 346,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222230,
+    "nom": "Sangmélima",
+    "nom_ascii": "Sangmelima",
+    "autres_noms": [
+      "Sangmelima",
+      "Sangmelina",
+      "Sangmélima",
+      "Сангмелима"
+    ],
+    "latitude": 2.93333,
+    "longitude": 11.98333,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 80036,
+    "altitude_m": 675,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2227230,
+    "nom": "Melong",
+    "nom_ascii": "Melong",
+    "autres_noms": [
+      "Melong"
+    ],
+    "latitude": 5.12181,
+    "longitude": 9.96143,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 76716,
+    "altitude_m": 792,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231504,
+    "nom": "Foumbot",
+    "nom_ascii": "Foumbot",
+    "autres_noms": [
+      "Foumbat",
+      "Foumbot"
+    ],
+    "latitude": 5.50803,
+    "longitude": 10.6325,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 74319,
+    "altitude_m": 1054,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235194,
+    "nom": "Bafia",
+    "nom_ascii": "Bafia",
+    "autres_noms": [
+      "Bafia",
+      "Bafia Ngitakuba",
+      "Bafiā Ngitakuba"
+    ],
+    "latitude": 4.75,
+    "longitude": 11.23333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 74050,
+    "altitude_m": 480,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2227613,
+    "nom": "Mbouda",
+    "nom_ascii": "Mbouda",
+    "autres_noms": [
+      "Mbouda"
+    ],
+    "latitude": 5.62611,
+    "longitude": 10.25421,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 71867,
+    "altitude_m": 1416,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225728,
+    "nom": "Mutengene",
+    "nom_ascii": "Mutengene",
+    "autres_noms": [],
+    "latitude": 4.0913,
+    "longitude": 9.3144,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 64054,
+    "altitude_m": 241,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225991,
+    "nom": "Mora",
+    "nom_ascii": "Mora",
+    "autres_noms": [
+      "Mora",
+      "More",
+      "Море"
+    ],
+    "latitude": 11.04611,
+    "longitude": 14.14011,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 61523,
+    "altitude_m": 460,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2227402,
+    "nom": "Meïganga",
+    "nom_ascii": "Meiganga",
+    "autres_noms": [
+      "Meiganda",
+      "Meiganga",
+      "Mejgange",
+      "Meïganga",
+      "Мейганге"
+    ],
+    "latitude": 6.51667,
+    "longitude": 14.3,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 59426,
+    "altitude_m": 970,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221030,
+    "nom": "Yagoua",
+    "nom_ascii": "Yagoua",
+    "autres_noms": [
+      "GXX",
+      "Jagua",
+      "Jágua",
+      "Yagoua",
+      "Yagua"
+    ],
+    "latitude": 10.34107,
+    "longitude": 15.23288,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 59069,
+    "altitude_m": 336,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229152,
+    "nom": "Loum",
+    "nom_ascii": "Loum",
+    "autres_noms": [
+      "Loum",
+      "Lum",
+      "Лум"
+    ],
+    "latitude": 4.7182,
+    "longitude": 9.7351,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 58554,
+    "altitude_m": 235,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235196,
+    "nom": "Bafang",
+    "nom_ascii": "Bafang",
+    "autres_noms": [
+      "Bafang"
+    ],
+    "latitude": 5.15705,
+    "longitude": 10.1771,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 54505,
+    "altitude_m": 1179,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2226275,
+    "nom": "Mokolo",
+    "nom_ascii": "Mokolo",
+    "autres_noms": [
+      "Mokolo"
+    ],
+    "latitude": 10.74244,
+    "longitude": 13.80227,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 51999,
+    "altitude_m": 813,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234663,
+    "nom": "Batouri",
+    "nom_ascii": "Batouri",
+    "autres_noms": [
+      "Batouri",
+      "Baturi",
+      "OUR"
+    ],
+    "latitude": 4.43333,
+    "longitude": 14.36667,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 49422,
+    "altitude_m": 631,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234794,
+    "nom": "Banyo",
+    "nom_ascii": "Banyo",
+    "autres_noms": [
+      "Banjo",
+      "Banyo"
+    ],
+    "latitude": 6.75,
+    "longitude": 11.81667,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 47936,
+    "altitude_m": 1077,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231319,
+    "nom": "Garoua Boulaï",
+    "nom_ascii": "Garoua Boulai",
+    "autres_noms": [
+      "Garoua Boulai",
+      "Garoua Boulaï"
+    ],
+    "latitude": 5.88333,
+    "longitude": 14.55,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 46615,
+    "altitude_m": 1034,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223293,
+    "nom": "Obala",
+    "nom_ascii": "Obala",
+    "autres_noms": [
+      "Obala"
+    ],
+    "latitude": 4.16667,
+    "longitude": 11.53333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 45321,
+    "altitude_m": 542,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223198,
+    "nom": "Oku",
+    "nom_ascii": "Oku",
+    "autres_noms": [],
+    "latitude": 6.25,
+    "longitude": 10.43333,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 44443,
+    "altitude_m": 2422,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228005,
+    "nom": "Mbanga",
+    "nom_ascii": "Mbanga",
+    "autres_noms": [
+      "M'Bange",
+      "Mbanga",
+      "M’Bangé"
+    ],
+    "latitude": 4.5016,
+    "longitude": 9.5671,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 44155,
+    "altitude_m": 115,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225726,
+    "nom": "Muyuka",
+    "nom_ascii": "Muyuka",
+    "autres_noms": [
+      "Mouyouka",
+      "Muyuka"
+    ],
+    "latitude": 4.2898,
+    "longitude": 9.4103,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 43749,
+    "altitude_m": 41,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234865,
+    "nom": "Bangangté",
+    "nom_ascii": "Bangangte",
+    "autres_noms": [
+      "Bangangte",
+      "Bangangté",
+      "Bangante",
+      "Banganté"
+    ],
+    "latitude": 5.14079,
+    "longitude": 10.52535,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 43694,
+    "altitude_m": 1337,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231482,
+    "nom": "Fundong",
+    "nom_ascii": "Fundong",
+    "autres_noms": [
+      "Fundong"
+    ],
+    "latitude": 6.28,
+    "longitude": 10.283,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 43509,
+    "altitude_m": 1525,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231564,
+    "nom": "Fontem",
+    "nom_ascii": "Fontem",
+    "autres_noms": [
+      "Fontem"
+    ],
+    "latitude": 5.4685,
+    "longitude": 9.8818,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 42689,
+    "altitude_m": 902,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221053,
+    "nom": "Wum",
+    "nom_ascii": "Wum",
+    "autres_noms": [
+      "Wum"
+    ],
+    "latitude": 6.38333,
+    "longitude": 10.06667,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 42457,
+    "altitude_m": 1055,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228499,
+    "nom": "Manjo",
+    "nom_ascii": "Manjo",
+    "autres_noms": [
+      "Manjo"
+    ],
+    "latitude": 4.8428,
+    "longitude": 9.8217,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 41740,
+    "altitude_m": 526,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2576483,
+    "nom": "Ngaoundal",
+    "nom_ascii": "Ngaoundal",
+    "autres_noms": [
+      "Ngaoundal"
+    ],
+    "latitude": 6.5,
+    "longitude": 13.26667,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 40328,
+    "altitude_m": 924,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234942,
+    "nom": "Ndop",
+    "nom_ascii": "Ndop",
+    "autres_noms": [
+      "Bamunka",
+      "Ndop",
+      "Ramunka"
+    ],
+    "latitude": 5.98843,
+    "longitude": 10.43859,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 40152,
+    "altitude_m": 1183,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221530,
+    "nom": "Tibati",
+    "nom_ascii": "Tibati",
+    "autres_noms": [
+      "Tibati"
+    ],
+    "latitude": 6.46504,
+    "longitude": 12.62843,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 35673,
+    "altitude_m": 871,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221631,
+    "nom": "Tchéboa",
+    "nom_ascii": "Tcheboa",
+    "autres_noms": [
+      "Cheboa",
+      "Tcheboa",
+      "Tchèboa",
+      "Tchéboa",
+      "Tscheboa"
+    ],
+    "latitude": 9.02871,
+    "longitude": 13.1848,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 35199,
+    "altitude_m": 222,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231320,
+    "nom": "Garoua",
+    "nom_ascii": "Garoua",
+    "autres_noms": [
+      "GOU",
+      "Garoua",
+      "Garua",
+      "Garva",
+      "galua",
+      "garo'a",
+      "garoya",
+      "garu'a",
+      "garua",
+      "garuwa",
+      "garwa",
+      "gharwa",
+      "jia lu a",
+      "Гаруа",
+      "غاروا",
+      "گارؤا",
+      "گاروا",
+      "गारुआ",
+      "গারোয়া",
+      "ਗਾਰੋਆ",
+      "ጋሩዋ",
+      "ガルア",
+      "加鲁阿",
+      "가루아"
+    ],
+    "latitude": 9.30143,
+    "longitude": 13.39771,
+    "code_type": "PPLA",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 34957,
+    "altitude_m": 199,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222568,
+    "nom": "Pitoa",
+    "nom_ascii": "Pitoa",
+    "autres_noms": [
+      "Piloa",
+      "Pitoa",
+      "Pitowa"
+    ],
+    "latitude": 9.3839,
+    "longitude": 13.50231,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 33610,
+    "altitude_m": 187,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229681,
+    "nom": "Lagdo",
+    "nom_ascii": "Lagdo",
+    "autres_noms": [
+      "Lagdo"
+    ],
+    "latitude": 9.05828,
+    "longitude": 13.66605,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 33564,
+    "altitude_m": 234,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2220853,
+    "nom": "Yokadouma",
+    "nom_ascii": "Yokadouma",
+    "autres_noms": [
+      "Yokadouma",
+      "Youkadouma"
+    ],
+    "latitude": 3.51667,
+    "longitude": 15.05,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 32900,
+    "altitude_m": 523,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230599,
+    "nom": "Kaélé",
+    "nom_ascii": "Kaele",
+    "autres_noms": [
+      "KLE"
+    ],
+    "latitude": 10.10917,
+    "longitude": 14.45083,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 32853,
+    "altitude_m": 373,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233805,
+    "nom": "Bogo",
+    "nom_ascii": "Bogo",
+    "autres_noms": [
+      "Bogo"
+    ],
+    "latitude": 10.7336,
+    "longitude": 14.60928,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 32830,
+    "altitude_m": 343,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234904,
+    "nom": "Bandjoun",
+    "nom_ascii": "Bandjoun",
+    "autres_noms": [
+      "Bandjoun",
+      "ban zu en",
+      "班祖恩"
+    ],
+    "latitude": 5.37568,
+    "longitude": 10.41326,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 31750,
+    "altitude_m": 1529,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231636,
+    "nom": "Figuil",
+    "nom_ascii": "Figuil",
+    "autres_noms": [
+      "Figil",
+      "Figuil",
+      "Fīgil"
+    ],
+    "latitude": 9.75574,
+    "longitude": 13.9647,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 31550,
+    "altitude_m": 295,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228964,
+    "nom": "Magba",
+    "nom_ascii": "Magba",
+    "autres_noms": [
+      "Magba"
+    ],
+    "latitude": 5.95,
+    "longitude": 11.21667,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 30931,
+    "altitude_m": 720,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235776,
+    "nom": "Akonolinga",
+    "nom_ascii": "Akonolinga",
+    "autres_noms": [
+      "Akomolinga",
+      "Akonolinga"
+    ],
+    "latitude": 3.76667,
+    "longitude": 12.25,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 30078,
+    "altitude_m": 643,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228028,
+    "nom": "Mbandjok",
+    "nom_ascii": "Mbandjok",
+    "autres_noms": [
+      "Mbandjock",
+      "Mbandjok"
+    ],
+    "latitude": 4.45,
+    "longitude": 11.9,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 29281,
+    "altitude_m": 548,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228902,
+    "nom": "Makak",
+    "nom_ascii": "Makak",
+    "autres_noms": [
+      "Maka",
+      "Makak",
+      "Mom-Nug's",
+      "Mom-Nug’s",
+      "Макак"
+    ],
+    "latitude": 3.55,
+    "longitude": 11.03333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 29135,
+    "altitude_m": 648,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221362,
+    "nom": "Touboro",
+    "nom_ascii": "Touboro",
+    "autres_noms": [
+      "Touboro"
+    ],
+    "latitude": 7.7708,
+    "longitude": 15.3568,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 28987,
+    "altitude_m": 515,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225457,
+    "nom": "Nanga Eboko",
+    "nom_ascii": "Nanga Eboko",
+    "autres_noms": [
+      "Nanga Eboko"
+    ],
+    "latitude": 4.68333,
+    "longitude": 12.36667,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 28518,
+    "altitude_m": 615,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231881,
+    "nom": "Eséka",
+    "nom_ascii": "Eseka",
+    "autres_noms": [
+      "Eseka",
+      "Eséka"
+    ],
+    "latitude": 3.65,
+    "longitude": 10.76667,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 27928,
+    "altitude_m": 247,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223734,
+    "nom": "Nkoteng",
+    "nom_ascii": "Nkoteng",
+    "autres_noms": [
+      "Nkoteng"
+    ],
+    "latitude": 4.51667,
+    "longitude": 12.03333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 27677,
+    "altitude_m": 583,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235029,
+    "nom": "Bali",
+    "nom_ascii": "Bali",
+    "autres_noms": [
+      "BLC",
+      "Bali",
+      "Бали"
+    ],
+    "latitude": 5.88737,
+    "longitude": 10.01176,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 27473,
+    "altitude_m": 1355,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2596834,
+    "nom": "Blangwa",
+    "nom_ascii": "Blangwa",
+    "autres_noms": [
+      "Blangoua",
+      "Blangwa"
+    ],
+    "latitude": 12.77515,
+    "longitude": 14.55328,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 27208,
+    "altitude_m": 290,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224197,
+    "nom": "Njombé",
+    "nom_ascii": "Njombe",
+    "autres_noms": [
+      "Njombe",
+      "Njombo",
+      "Njombé",
+      "Nyombe",
+      "Nyombé"
+    ],
+    "latitude": 4.58056,
+    "longitude": 9.66472,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 27130,
+    "altitude_m": 74,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230378,
+    "nom": "Kekem",
+    "nom_ascii": "Kekem",
+    "autres_noms": [
+      "Kekem"
+    ],
+    "latitude": 5.15689,
+    "longitude": 10.01996,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 27038,
+    "altitude_m": 714,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224163,
+    "nom": "Nkambe",
+    "nom_ascii": "Nkambe",
+    "autres_noms": [
+      "Nkambe"
+    ],
+    "latitude": 6.63333,
+    "longitude": 10.66667,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 26816,
+    "altitude_m": 1078,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235186,
+    "nom": "Bafut",
+    "nom_ascii": "Bafut",
+    "autres_noms": [
+      "Bafut"
+    ],
+    "latitude": 6.08333,
+    "longitude": 10.1,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 25563,
+    "altitude_m": 1193,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235660,
+    "nom": "Ambam",
+    "nom_ascii": "Ambam",
+    "autres_noms": [
+      "Ambam"
+    ],
+    "latitude": 2.38333,
+    "longitude": 11.28333,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 25052,
+    "altitude_m": 570,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221802,
+    "nom": "Souza Gare",
+    "nom_ascii": "Souza Gare",
+    "autres_noms": [
+      "Souza",
+      "Souza Gare"
+    ],
+    "latitude": 4.2344,
+    "longitude": 9.6164,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 24994,
+    "altitude_m": 89,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234941,
+    "nom": "Bamusso",
+    "nom_ascii": "Bamusso",
+    "autres_noms": [
+      "Bamuso",
+      "Bamusso"
+    ],
+    "latitude": 4.4591,
+    "longitude": 8.9027,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 24741,
+    "altitude_m": 8,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230873,
+    "nom": "Guidiguis",
+    "nom_ascii": "Guidiguis",
+    "autres_noms": [
+      "Gidigig",
+      "Gidigis",
+      "Guidiguis"
+    ],
+    "latitude": 10.13366,
+    "longitude": 14.70748,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 24554,
+    "altitude_m": 378,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228977,
+    "nom": "Maga",
+    "nom_ascii": "Maga",
+    "autres_noms": [],
+    "latitude": 10.8434,
+    "longitude": 14.93962,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 24492,
+    "altitude_m": 315,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2236053,
+    "nom": "Abong Mbang",
+    "nom_ascii": "Abong Mbang",
+    "autres_noms": [
+      "Abong Mbang"
+    ],
+    "latitude": 3.98333,
+    "longitude": 13.18333,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 24433,
+    "altitude_m": 694,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221408,
+    "nom": "Tombel",
+    "nom_ascii": "Tombel",
+    "autres_noms": [
+      "Tombel"
+    ],
+    "latitude": 4.7466,
+    "longitude": 9.6705,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 24384,
+    "altitude_m": 485,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234536,
+    "nom": "Bélabo",
+    "nom_ascii": "Belabo",
+    "autres_noms": [
+      "Belabo",
+      "Bélabo",
+      "Белабо"
+    ],
+    "latitude": 4.93333,
+    "longitude": 13.3,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 24359,
+    "altitude_m": 614,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223226,
+    "nom": "Okoa",
+    "nom_ascii": "Okoa",
+    "autres_noms": [
+      "Okoa",
+      "Scho",
+      "So",
+      "Soa"
+    ],
+    "latitude": 3.98333,
+    "longitude": 11.6,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 24110,
+    "altitude_m": 656,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232102,
+    "nom": "Ekondo Titi",
+    "nom_ascii": "Ekondo Titi",
+    "autres_noms": [
+      "Ekondo Titi",
+      "Ekoundon Titi",
+      "Ekundu-Titi"
+    ],
+    "latitude": 4.603,
+    "longitude": 9.0404,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 23975,
+    "altitude_m": 48,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221607,
+    "nom": "Tcholliré",
+    "nom_ascii": "Tchollire",
+    "autres_noms": [
+      "Cholire",
+      "Choliré",
+      "Chollire",
+      "Djolere",
+      "Djoléré",
+      "Jolere",
+      "Tcholere",
+      "Tcholire",
+      "Tcholiré",
+      "Tchollire",
+      "Tcholliré",
+      "Tcholéré",
+      "Tscholere"
+    ],
+    "latitude": 8.4022,
+    "longitude": 14.1698,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 23187,
+    "altitude_m": 382,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229267,
+    "nom": "Lolodorf",
+    "nom_ascii": "Lolodorf",
+    "autres_noms": [
+      "Lelodorf",
+      "Lolodorf",
+      "Lolodrof"
+    ],
+    "latitude": 3.23333,
+    "longitude": 10.73333,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 22252,
+    "altitude_m": 467,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222623,
+    "nom": "Penja",
+    "nom_ascii": "Penja",
+    "autres_noms": [
+      "Penja"
+    ],
+    "latitude": 4.63911,
+    "longitude": 9.67987,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 21367,
+    "altitude_m": 148,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228675,
+    "nom": "Mamfe",
+    "nom_ascii": "Mamfe",
+    "autres_noms": [
+      "MMF",
+      "Mamfe"
+    ],
+    "latitude": 5.75132,
+    "longitude": 9.3137,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 20350,
+    "altitude_m": 93,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232997,
+    "nom": "Dizangué",
+    "nom_ascii": "Dizangue",
+    "autres_noms": [
+      "Dizangue",
+      "Dizangué",
+      "Dizanque",
+      "Dizanqué"
+    ],
+    "latitude": 3.76667,
+    "longitude": 9.98333,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 19243,
+    "altitude_m": 61,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221394,
+    "nom": "Tonga",
+    "nom_ascii": "Tonga",
+    "autres_noms": [
+      "Lagosdorf",
+      "Tonga",
+      "Tonga's",
+      "Tonga’s"
+    ],
+    "latitude": 4.96667,
+    "longitude": 10.7,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 16036,
+    "altitude_m": 809,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234635,
+    "nom": "Bazou",
+    "nom_ascii": "Bazou",
+    "autres_noms": [
+      "Bazou"
+    ],
+    "latitude": 5.06001,
+    "longitude": 10.46751,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 13058,
+    "altitude_m": 1206,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225745,
+    "nom": "Mundemba",
+    "nom_ascii": "Mundemba",
+    "autres_noms": [
+      "Mundemba",
+      "Mundenba",
+      "Ndian"
+    ],
+    "latitude": 4.9479,
+    "longitude": 8.8724,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 11912,
+    "altitude_m": 111,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234339,
+    "nom": "Bétaré Oya",
+    "nom_ascii": "Betare Oya",
+    "autres_noms": [
+      "Betare",
+      "Betare Oya",
+      "Betaye-Oya",
+      "Bétaré Oya"
+    ],
+    "latitude": 5.6,
+    "longitude": 14.08333,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 11866,
+    "altitude_m": 768,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222439,
+    "nom": "Rey Bouba",
+    "nom_ascii": "Rey Bouba",
+    "autres_noms": [
+      "Rei Buba",
+      "Rei-Bouba",
+      "Rey Bouba",
+      "Reï-Bouba"
+    ],
+    "latitude": 8.6724,
+    "longitude": 14.1786,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 11454,
+    "altitude_m": 235,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223092,
+    "nom": "Oshie",
+    "nom_ascii": "Oshie",
+    "autres_noms": [
+      "Oshie"
+    ],
+    "latitude": 6.1273,
+    "longitude": 9.8681,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 10822,
+    "altitude_m": 1429,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2226641,
+    "nom": "Mindif",
+    "nom_ascii": "Mindif",
+    "autres_noms": [
+      "Mendif",
+      "Mindif"
+    ],
+    "latitude": 10.39812,
+    "longitude": 14.43635,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 10538,
+    "altitude_m": 396,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235293,
+    "nom": "Babanki",
+    "nom_ascii": "Babanki",
+    "autres_noms": [
+      "Babanki",
+      "Big Babanki"
+    ],
+    "latitude": 6.11667,
+    "longitude": 10.25,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 9851,
+    "altitude_m": 1156,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2227853,
+    "nom": "Mbengwi",
+    "nom_ascii": "Mbengwi",
+    "autres_noms": [
+      "Mbengwi"
+    ],
+    "latitude": 6.01667,
+    "longitude": 10.0,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 9734,
+    "altitude_m": 1222,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235814,
+    "nom": "Akom II",
+    "nom_ascii": "Akom II",
+    "autres_noms": [
+      "Akom",
+      "Akom II"
+    ],
+    "latitude": 2.78333,
+    "longitude": 10.56667,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 9709,
+    "altitude_m": 507,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234684,
+    "nom": "Batibo",
+    "nom_ascii": "Batibo",
+    "autres_noms": [
+      "Batibo"
+    ],
+    "latitude": 5.8358,
+    "longitude": 9.8553,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 9163,
+    "altitude_m": 1090,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234455,
+    "nom": "Belo",
+    "nom_ascii": "Belo",
+    "autres_noms": [
+      "Bello",
+      "Belo"
+    ],
+    "latitude": 6.175,
+    "longitude": 10.346,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 8705,
+    "altitude_m": 1403,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223191,
+    "nom": "Olamzé",
+    "nom_ascii": "Olamze",
+    "autres_noms": [
+      "Olamze",
+      "Olamzé"
+    ],
+    "latitude": 2.21667,
+    "longitude": 11.08333,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 8518,
+    "altitude_m": 579,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233056,
+    "nom": "Dimako",
+    "nom_ascii": "Dimako",
+    "autres_noms": [
+      "Dimako"
+    ],
+    "latitude": 4.38333,
+    "longitude": 13.56667,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 8476,
+    "altitude_m": 649,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224212,
+    "nom": "Njinikom",
+    "nom_ascii": "Njinikom",
+    "autres_noms": [
+      "Njinikom",
+      "Njnikom"
+    ],
+    "latitude": 6.23333,
+    "longitude": 10.28333,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 8247,
+    "altitude_m": 1315,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225263,
+    "nom": "Ndikiniméki",
+    "nom_ascii": "Ndikinimeki",
+    "autres_noms": [
+      "Ndikinemeki",
+      "Ndikinimeki",
+      "Ndikiniméki"
+    ],
+    "latitude": 4.76667,
+    "longitude": 10.83333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 8247,
+    "altitude_m": 803,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233704,
+    "nom": "Bonabéri",
+    "nom_ascii": "Bonaberi",
+    "autres_noms": [
+      "Bonabeerie",
+      "Bonaberi",
+      "Bonabéri",
+      "Boniberi",
+      "Bouaberi"
+    ],
+    "latitude": 4.07142,
+    "longitude": 9.68177,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 8091,
+    "altitude_m": 6,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230028,
+    "nom": "Kontcha",
+    "nom_ascii": "Kontcha",
+    "autres_noms": [
+      "Koncha",
+      "Kontcha",
+      "Kontscha"
+    ],
+    "latitude": 7.96667,
+    "longitude": 12.23333,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 8018,
+    "altitude_m": 425,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221046,
+    "nom": "Yabassi",
+    "nom_ascii": "Yabassi",
+    "autres_noms": [
+      "Jabassi",
+      "Yabasi",
+      "Yabassi",
+      "Yabazi"
+    ],
+    "latitude": 4.45697,
+    "longitude": 9.96822,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 7560,
+    "altitude_m": 49,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234803,
+    "nom": "Bansoa",
+    "nom_ascii": "Bansoa",
+    "autres_noms": [
+      "Bansoa"
+    ],
+    "latitude": 5.44836,
+    "longitude": 10.31355,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 7560,
+    "altitude_m": 1483,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234842,
+    "nom": "Ngou",
+    "nom_ascii": "Ngou",
+    "autres_noms": [
+      "Bangou",
+      "Banjou",
+      "Ngou"
+    ],
+    "latitude": 5.19685,
+    "longitude": 10.38595,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 7560,
+    "altitude_m": 1441,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228881,
+    "nom": "Makary",
+    "nom_ascii": "Makary",
+    "autres_noms": [
+      "Mafate",
+      "Mafaté",
+      "Mafete",
+      "Makari",
+      "Makary"
+    ],
+    "latitude": 12.57535,
+    "longitude": 14.45483,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 7331,
+    "altitude_m": 295,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234545,
+    "nom": "Bekondo",
+    "nom_ascii": "Bekondo",
+    "autres_noms": [
+      "Bekondo",
+      "Boa Bekondo"
+    ],
+    "latitude": 4.6819,
+    "longitude": 9.3214,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 7331,
+    "altitude_m": 382,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234520,
+    "nom": "Bélel",
+    "nom_ascii": "Belel",
+    "autres_noms": [
+      "Belel",
+      "Bélel"
+    ],
+    "latitude": 7.05,
+    "longitude": 14.43333,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 6831,
+    "altitude_m": 1448,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234968,
+    "nom": "Bamendjou",
+    "nom_ascii": "Bamendjou",
+    "autres_noms": [
+      "Bamendjou"
+    ],
+    "latitude": 5.38988,
+    "longitude": 10.33014,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 6643,
+    "altitude_m": 1604,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224863,
+    "nom": "Ngambé",
+    "nom_ascii": "Ngambe",
+    "autres_noms": [
+      "Babimbi",
+      "Ngambe",
+      "Ngambé",
+      "Nganbe",
+      "Nganbé"
+    ],
+    "latitude": 4.23343,
+    "longitude": 10.61532,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 6414,
+    "altitude_m": 575,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223421,
+    "nom": "Ntui",
+    "nom_ascii": "Ntui",
+    "autres_noms": [
+      "N'Dui",
+      "Ntui",
+      "Ntwi",
+      "N’Dui"
+    ],
+    "latitude": 4.45,
+    "longitude": 11.63333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 6185,
+    "altitude_m": 526,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2226441,
+    "nom": "Mme-Bafumen",
+    "nom_ascii": "Mme-Bafumen",
+    "autres_noms": [
+      "Me",
+      "Mme",
+      "Mme-Bafumen"
+    ],
+    "latitude": 6.33333,
+    "longitude": 10.23333,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 6149,
+    "altitude_m": 1403,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222366,
+    "nom": "Saa",
+    "nom_ascii": "Saa",
+    "autres_noms": [
+      "Saa"
+    ],
+    "latitude": 4.36667,
+    "longitude": 11.45,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 5727,
+    "altitude_m": 512,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2222539,
+    "nom": "Poli",
+    "nom_ascii": "Poli",
+    "autres_noms": [
+      "Poli"
+    ],
+    "latitude": 8.4756,
+    "longitude": 13.24097,
+    "code_type": "PPL",
+    "code_region": "13",
+    "region": "Nord",
+    "population": 5727,
+    "altitude_m": 477,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230285,
+    "nom": "Bankim",
+    "nom_ascii": "Bankim",
+    "autres_noms": [
+      "Bamkim",
+      "Bamkin",
+      "Bankin",
+      "Kimi",
+      "Nga's"
+    ],
+    "latitude": 6.08303,
+    "longitude": 11.4905,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 5727,
+    "altitude_m": 731,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2234936,
+    "nom": "Bana",
+    "nom_ascii": "Bana",
+    "autres_noms": [
+      "Bana"
+    ],
+    "latitude": 5.14655,
+    "longitude": 10.27545,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": 5727,
+    "altitude_m": 1415,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232497,
+    "nom": "Doumé",
+    "nom_ascii": "Doume",
+    "autres_noms": [
+      "Doume",
+      "Doumé",
+      "Dume",
+      "Dume-Station"
+    ],
+    "latitude": 4.23333,
+    "longitude": 13.45,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 5581,
+    "altitude_m": 630,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224413,
+    "nom": "Nguti",
+    "nom_ascii": "Nguti",
+    "autres_noms": [],
+    "latitude": 5.3299,
+    "longitude": 9.4185,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 5498,
+    "altitude_m": 228,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2595172,
+    "nom": "Ndom",
+    "nom_ascii": "Ndom",
+    "autres_noms": [],
+    "latitude": 4.4978,
+    "longitude": 9.5628,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 5498,
+    "altitude_m": 123,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223216,
+    "nom": "Okola",
+    "nom_ascii": "Okola",
+    "autres_noms": [
+      "Okola"
+    ],
+    "latitude": 4.01667,
+    "longitude": 11.38333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 5390,
+    "altitude_m": 652,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2220849,
+    "nom": "Yoko",
+    "nom_ascii": "Yoko",
+    "autres_noms": [
+      "Joko",
+      "Yoko"
+    ],
+    "latitude": 5.53333,
+    "longitude": 12.31667,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 5269,
+    "altitude_m": 992,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2230641,
+    "nom": "Jakiri",
+    "nom_ascii": "Jakiri",
+    "autres_noms": [
+      "Jakiri"
+    ],
+    "latitude": 6.1,
+    "longitude": 10.65,
+    "code_type": "PPL",
+    "code_region": "07",
+    "region": "Nord-Ouest",
+    "population": 5269,
+    "altitude_m": 1609,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225325,
+    "nom": "Ndelele",
+    "nom_ascii": "Ndelele",
+    "autres_noms": [
+      "Alte Fakt Delele",
+      "Delele",
+      "Delelé",
+      "Ndelele",
+      "Ndélélé",
+      "Vieux-Delele",
+      "Vieux-Délélé"
+    ],
+    "latitude": 4.04065,
+    "longitude": 14.92501,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 5040,
+    "altitude_m": 605,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2226515,
+    "nom": "Minta",
+    "nom_ascii": "Minta",
+    "autres_noms": [
+      "Minta"
+    ],
+    "latitude": 4.58333,
+    "longitude": 12.8,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 4934,
+    "altitude_m": 667,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2232774,
+    "nom": "Djohong",
+    "nom_ascii": "Djohong",
+    "autres_noms": [
+      "Djohong",
+      "Doumba"
+    ],
+    "latitude": 6.83333,
+    "longitude": 14.7,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 4813,
+    "altitude_m": 1271,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233100,
+    "nom": "Dibombari",
+    "nom_ascii": "Dibombari",
+    "autres_noms": [
+      "Dibombari"
+    ],
+    "latitude": 4.1787,
+    "longitude": 9.6561,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 4811,
+    "altitude_m": 57,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2221513,
+    "nom": "Tignère",
+    "nom_ascii": "Tignere",
+    "autres_noms": [
+      "Tignere",
+      "Tignère",
+      "Tingere",
+      "Tingeré",
+      "Tinguere",
+      "Tinguéré"
+    ],
+    "latitude": 7.36667,
+    "longitude": 12.65,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 4353,
+    "altitude_m": 1104,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224641,
+    "nom": "Ngomedzap",
+    "nom_ascii": "Ngomedzap",
+    "autres_noms": [
+      "Ngomedzap"
+    ],
+    "latitude": 3.25,
+    "longitude": 11.2,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 4284,
+    "altitude_m": 701,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235780,
+    "nom": "Akono",
+    "nom_ascii": "Akono",
+    "autres_noms": [
+      "Akono"
+    ],
+    "latitude": 3.5,
+    "longitude": 11.33333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 3821,
+    "altitude_m": 678,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231851,
+    "nom": "Essé",
+    "nom_ascii": "Esse",
+    "autres_noms": [
+      "Esse",
+      "Essé"
+    ],
+    "latitude": 4.1,
+    "longitude": 11.9,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 3803,
+    "altitude_m": 640,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229780,
+    "nom": "Koza",
+    "nom_ascii": "Koza",
+    "autres_noms": [
+      "Koza"
+    ],
+    "latitude": 10.86846,
+    "longitude": 13.88205,
+    "code_type": "PPL",
+    "code_region": "12",
+    "region": "Extrême-Nord",
+    "population": 3665,
+    "altitude_m": 501,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2227980,
+    "nom": "Mbankomo",
+    "nom_ascii": "Mbankomo",
+    "autres_noms": [
+      "Mbankomo"
+    ],
+    "latitude": 3.78333,
+    "longitude": 11.38333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 2387,
+    "altitude_m": 732,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2224584,
+    "nom": "Ngoro",
+    "nom_ascii": "Ngoro",
+    "autres_noms": [
+      "Janjo",
+      "Janjō",
+      "Ngoro",
+      "Ngorro"
+    ],
+    "latitude": 4.95,
+    "longitude": 11.38333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 2305,
+    "altitude_m": 501,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2233118,
+    "nom": "Diang",
+    "nom_ascii": "Diang",
+    "autres_noms": [
+      "Diang"
+    ],
+    "latitude": 4.25,
+    "longitude": 10.01667,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 2062,
+    "altitude_m": 56,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 6620518,
+    "nom": "Somié",
+    "nom_ascii": "Somie",
+    "autres_noms": [
+      "Ndeba",
+      "Somie",
+      "Tchokmon"
+    ],
+    "latitude": 6.45843,
+    "longitude": 11.43299,
+    "code_type": "PPL",
+    "code_region": "10",
+    "region": "Adamaoua",
+    "population": 2000,
+    "altitude_m": 771,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225703,
+    "nom": "Mvangué",
+    "nom_ascii": "Mvangue",
+    "autres_noms": [],
+    "latitude": 2.96667,
+    "longitude": 11.51667,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 1908,
+    "altitude_m": 697,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2223162,
+    "nom": "Ombésa",
+    "nom_ascii": "Ombesa",
+    "autres_noms": [
+      "Ombesa",
+      "Ombessa",
+      "Ombésa"
+    ],
+    "latitude": 4.6,
+    "longitude": 11.25,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 1833,
+    "altitude_m": 459,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2225940,
+    "nom": "Mouanko",
+    "nom_ascii": "Mouanko",
+    "autres_noms": [
+      "Mouangko",
+      "Mouanko",
+      "Muankoo"
+    ],
+    "latitude": 3.63972,
+    "longitude": 9.77694,
+    "code_type": "PPL",
+    "code_region": "05",
+    "region": "Littoral",
+    "population": 1604,
+    "altitude_m": 13,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2231775,
+    "nom": "Évodoula",
+    "nom_ascii": "Evodoula",
+    "autres_noms": [
+      "Evodoula",
+      "Évodoula"
+    ],
+    "latitude": 4.08333,
+    "longitude": 11.2,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": 1521,
+    "altitude_m": 562,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228019,
+    "nom": "Mbang",
+    "nom_ascii": "Mbang",
+    "autres_noms": [
+      "Mbang"
+    ],
+    "latitude": 4.58333,
+    "longitude": 13.33333,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 1237,
+    "altitude_m": 683,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2228989,
+    "nom": "Mofako Balue",
+    "nom_ascii": "Mofako Balue",
+    "autres_noms": [
+      "Mafako",
+      "Mofako"
+    ],
+    "latitude": 4.8541,
+    "longitude": 9.2546,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": 1000,
+    "altitude_m": 1042,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2229107,
+    "nom": "Maan",
+    "nom_ascii": "Maan",
+    "autres_noms": [
+      "Maan"
+    ],
+    "latitude": 2.35,
+    "longitude": 10.61667,
+    "code_type": "PPL",
+    "code_region": "14",
+    "region": "Sud",
+    "population": 875,
+    "altitude_m": 520,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2236054,
+    "nom": "Abong Doum",
+    "nom_ascii": "Abong Doum",
+    "autres_noms": [],
+    "latitude": 3.98333,
+    "longitude": 13.15,
+    "code_type": "PPL",
+    "code_region": "04",
+    "region": "Est",
+    "population": 640,
+    "altitude_m": 698,
+    "fuseau_horaire": "Africa/Douala"
+  },
+  {
+    "geonameid": 2235161,
+    "nom": "Baham",
+    "nom_ascii": "Baham",
+    "autres_noms": [],
+    "latitude": 5.33013,
+    "longitude": 10.37057,
+    "code_type": "PPL",
+    "code_region": "08",
+    "region": "Ouest",
+    "population": null,
+    "altitude_m": 1638,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département des Hauts-Plateaux (population non renseignée dans GeoNames)"
+  },
+  {
+    "geonameid": 6858332,
+    "nom": "Bangem",
+    "nom_ascii": "Banguem",
+    "autres_noms": [
+      "Banguem"
+    ],
+    "latitude": 5.0856,
+    "longitude": 9.7696,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": null,
+    "altitude_m": 1222,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département de Koupé-Manengouba (population non renseignée dans GeoNames)"
+  },
+  {
+    "geonameid": null,
+    "nom": "Menji",
+    "nom_ascii": "Menji",
+    "autres_noms": [],
+    "latitude": 5.4852,
+    "longitude": 9.8627,
+    "code_type": "PPL",
+    "code_region": "09",
+    "region": "Sud-Ouest",
+    "population": null,
+    "altitude_m": null,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département de Lebialem, absent de GeoNames — coordonnées obtenues via recherche cartographique"
+  },
+  {
+    "geonameid": 2226106,
+    "nom": "Monatélé",
+    "nom_ascii": "Monatele",
+    "autres_noms": [
+      "Monatele"
+    ],
+    "latitude": 4.26667,
+    "longitude": 11.2,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": null,
+    "altitude_m": 400,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département de la Lékié (population non renseignée dans GeoNames)"
+  },
+  {
+    "geonameid": 2226792,
+    "nom": "Mfou",
+    "nom_ascii": "Mfou",
+    "autres_noms": [],
+    "latitude": 3.96667,
+    "longitude": 11.93333,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": null,
+    "altitude_m": 736,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département de Méfou-et-Afamba (population non renseignée dans GeoNames)"
+  },
+  {
+    "geonameid": 2224492,
+    "nom": "Ngoumou",
+    "nom_ascii": "Ngoumou",
+    "autres_noms": [
+      "Ngoum"
+    ],
+    "latitude": 3.58333,
+    "longitude": 11.3,
+    "code_type": "PPL",
+    "code_region": "11",
+    "region": "Centre",
+    "population": null,
+    "altitude_m": 680,
+    "fuseau_horaire": "Africa/Douala",
+    "note": "Chef-lieu du département de Méfou-et-Akono (population non renseignée dans GeoNames)"
+  }
+]
