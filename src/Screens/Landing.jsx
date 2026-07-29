@@ -143,7 +143,7 @@ export default function Landing({ stats, onNavigate }) {
             <div className="landing-why-card-header">
               <div className="landing-why-icon" style={{ background: 'rgba(232, 93, 4, 0.08)' }}>
                 <svg width="26" height="26" fill="none" stroke="var(--primary)" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
               </div>
               <h3 className="landing-why-card-title">Une urgence silencieuse</h3>
@@ -159,7 +159,7 @@ export default function Landing({ stats, onNavigate }) {
             <div className="landing-why-card-header">
               <div className="landing-why-icon" style={{ background: 'rgba(29, 154, 91, 0.08)' }}>
                 <svg width="26" height="26" fill="none" stroke="var(--green)" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
               <h3 className="landing-why-card-title">Un réseau de citoyens engagés</h3>
@@ -175,7 +175,7 @@ export default function Landing({ stats, onNavigate }) {
             <div className="landing-why-card-header">
               <div className="landing-why-icon" style={{ background: 'rgba(138, 92, 246, 0.08)' }}>
                 <svg width="26" height="26" fill="none" stroke="var(--purple)" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="landing-why-card-title">Votre signature, notre levier</h3>
@@ -186,8 +186,103 @@ export default function Landing({ stats, onNavigate }) {
           </div>
 
         </div>
+
+        {/* ═══════════════════════════════════════════
+            BANNIÈRE EN SAVOIR PLUS SUR VITASANG (FOND TRANSPARENT SANS BORDURE)
+        ════════════════════════════════════════════ */}
+        <div className="landing-learn-more-banner">
+          {/* Côté Gauche : Mascotte Joyeuse & Éléments décoratifs */}
+          <div className="learn-more-mascot-wrap">
+            <div className="learn-more-glow-aura"></div>
+
+            {/* Badge flottant 1 */}
+            <div className="learn-more-badge badge-top-left animate-float-d1">
+              <span>🛡️</span>
+              <span>Réseau Sécurisé</span>
+            </div>
+
+            {/* Mascotte Goutte de Sang Expressive avec Mains Levées */}
+            <svg className="animate-float" width="165" height="195" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="mascotGrad" x1="100" y1="10" x2="100" y2="210" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#FB923C" />
+                  <stop offset="65%" stopColor="#E85D04" />
+                  <stop offset="100%" stopColor="#C2410C" />
+                </linearGradient>
+              </defs>
+
+              {/* Main levée gauche */}
+              <ellipse cx="36" cy="105" rx="13" ry="9" fill="#FB923C" transform="rotate(-35 36 105)" />
+              <line x1="58" y1="126" x2="36" y2="105" stroke="#FB923C" strokeWidth="7" strokeLinecap="round" />
+
+              {/* Main levée droite */}
+              <ellipse cx="164" cy="105" rx="13" ry="9" fill="#FB923C" transform="rotate(35 164 105)" />
+              <line x1="142" y1="126" x2="164" y2="105" stroke="#FB923C" strokeWidth="7" strokeLinecap="round" />
+
+              {/* Corps goutte */}
+              <path d="M100 12C100 12 30 102 30 158a70 70 0 00140 0c0-56-70-146-70-146z" fill="url(#mascotGrad)" />
+
+              {/* Reflet brillant */}
+              <ellipse cx="70" cy="135" rx="15" ry="22" fill="#FFFFFF" opacity="0.25" transform="rotate(-18 70 135)" />
+
+              {/* Yeux joyeux en arc (souriants) */}
+              <path d="M74 148 Q82 138 90 148" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" />
+              <path d="M110 148 Q118 138 126 148" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" />
+
+              {/* Joues rosées */}
+              <circle cx="68" cy="158" r="8" fill="#FDBA74" opacity="0.6" />
+              <circle cx="132" cy="158" r="8" fill="#FDBA74" opacity="0.6" />
+
+              {/* Sourire joyeux */}
+              <path d="M80 166 Q100 190 120 166 C115 186 85 186 80 166Z" fill="#7C2D12" />
+              <path d="M88 176 Q100 188 112 176 Q100 168 88 176Z" fill="#F43F5E" />
+
+              {/* Étincelles */}
+              <text x="38" y="85" fontSize="16" fill="#FDBA74">✦</text>
+              <text x="152" y="85" fontSize="16" fill="#FDBA74">✦</text>
+              <text x="96" y="8" fontSize="14" fill="#FB923C">✨</text>
+            </svg>
+
+            {/* Badge flottant 2 */}
+            <div className="learn-more-badge badge-bottom-right animate-float-d2">
+              <span>⚡</span>
+              <span>Urgence 24h/7</span>
+            </div>
+          </div>
+
+          {/* Côté Droit : Texte Pro court & Spacieux */}
+          <div className="learn-more-content">
+            <span className="inline-block text-[10px] font-semibold tracking-widest uppercase px-3.5 py-1 rounded-full bg-[var(--tint)] text-[var(--primary)]">
+              Découvrir l'écosystème
+            </span>
+
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-[var(--text)] leading-tight">
+              En savoir plus sur <span style={{ color: 'var(--primary)' }}>VitaSang</span>
+            </h3>
+
+            <p className="text-xs md:text-sm text-[var(--text-soft)] leading-relaxed max-w-lg">
+              Découvrez la vision globale de VitaSang et notre plateforme numérique dédiée à la solidarité sanguine rapide, gratuite et accessible à tous au Cameroun.
+            </p>
+
+            <div className="pt-2">
+              <a
+                href="https://vitasangs.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-learn-more-styled"
+              >
+                <span>En savoir plus sur VitaSang</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </section>
 
     </div>
   );
 }
+

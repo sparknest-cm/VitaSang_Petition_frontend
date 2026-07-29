@@ -26,6 +26,7 @@
     min-height: 100vh;
     overflow-y: auto;
   }
+
   .landing-split-container {
     grid-template-columns: 1fr;
     height: auto;
@@ -97,19 +98,34 @@
   z-index: 10;
   white-space: nowrap;
 }
+
 .stat-float-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* DESKTOP POSITIONS HARMONIEUSES */
-.stat-card-1 { top: -4%; left: -8%; }
-.stat-card-2 { top: 42%; right: -10%; }
-.stat-card-3 { bottom: -4%; left: -4%; }
+.stat-card-1 {
+  top: -4%;
+  left: -8%;
+}
+
+.stat-card-2 {
+  top: 42%;
+  right: -10%;
+}
+
+.stat-card-3 {
+  bottom: -4%;
+  left: -4%;
+}
 
 /* MOYENS & PETITS ÉCRANS (< 868px) */
 @media (max-width: 868px) {
-  .stat-card-2 { top: 32%; right: -2%; }
+  .stat-card-2 {
+    top: 32%;
+    right: -2%;
+  }
 }
 
 /* PETITS ÉCRANS / MOBILE (< 640px) : SURÉLÉVATION DE "PRÊTS EN URGENCE" */
@@ -118,9 +134,24 @@
     max-width: 320px;
     min-height: 300px;
   }
-  .stat-card-1 { top: -4%; left: 0%; padding: 8px 14px; }
-  .stat-card-2 { top: 30%; right: 0%; padding: 8px 14px; }
-  .stat-card-3 { bottom: -2%; left: 2%; padding: 8px 14px; }
+
+  .stat-card-1 {
+    top: -4%;
+    left: 0%;
+    padding: 8px 14px;
+  }
+
+  .stat-card-2 {
+    top: 30%;
+    right: 0%;
+    padding: 8px 14px;
+  }
+
+  .stat-card-3 {
+    bottom: -2%;
+    left: 2%;
+    padding: 8px 14px;
+  }
 }
 
 /* ================================================================
@@ -128,7 +159,7 @@
    ================================================================ */
 .landing-why-section {
   width: 100%;
-  padding: 80px 40px 96px;
+  padding: 60px 40px 80px;
   box-sizing: border-box;
   background: transparent;
 }
@@ -136,10 +167,10 @@
 .landing-why-header {
   text-align: center;
   max-width: 560px;
-  margin: 0 auto 52px;
+  margin: 0 auto 36px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .landing-why-badge {
@@ -250,23 +281,148 @@
   margin: 0;
 }
 
+/* BANNIÈRE EN SAVOIR PLUS SUR VITASANG (TRANSPARENT SANS BORDURE) */
+.landing-learn-more-banner {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 24px 0 0;
+  border: none;
+  box-shadow: none;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+}
+
+.learn-more-mascot-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.learn-more-glow-aura {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: radial-gradient(circle, rgba(232, 93, 4, 0.18) 0%, rgba(232, 93, 4, 0) 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.learn-more-badge {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.badge-top-left {
+  top: 5px;
+  left: 10px;
+}
+
+.badge-bottom-right {
+  bottom: 5px;
+  right: 10px;
+}
+
+.learn-more-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 14px;
+}
+
+.learn-more-content h3 {
+  margin: 0;
+}
+
+.learn-more-content p {
+  margin: 0;
+}
+
+/* BOUTON CLIQUE STYLÉ */
+.btn-learn-more-styled {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--primary) 0%, #FB923C 100%);
+  color: #FFFFFF !important;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(232, 93, 4, 0.28);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-learn-more-styled:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 32px rgba(232, 93, 4, 0.38);
+}
+
 /* Responsive — tablette / mobile */
 @media (max-width: 900px) {
   .landing-why-cards {
     grid-template-columns: 1fr;
     max-width: 480px;
   }
+
   .landing-why-card {
     padding: 20px 18px;
     gap: 10px;
   }
+
   .landing-why-num {
     display: none;
   }
+
   .landing-why-section {
-    padding: 60px 20px 72px;
+    padding: 10px 20px 40px;
   }
+
   .landing-why-title {
     font-size: 26px;
+  }
+
+  .landing-learn-more-banner {
+    grid-template-columns: 1fr;
+    padding: 20px 0 0;
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  .learn-more-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .badge-top-left {
+    top: 0px;
+    left: 10px;
+  }
+
+  .badge-bottom-right {
+    bottom: 0px;
+    right: 10px;
   }
 }
