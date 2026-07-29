@@ -1,5 +1,5 @@
 // Connection directe et exclusive au backend en ligne VitaSang sur Fly.dev
-const rawUrl = 'https://vitasang-petition-backend.fly.dev';
+const rawUrl = 'http://localhost:8080'; // URL du backend VitaSang (à remplacer par l'URL de production si nécessaire)
 export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
 
 /**
@@ -34,7 +34,32 @@ export const signerPetition = async (data) => {
 };
 
 /**
- * 2. Enregistrer un partage (POST /api/partage)
+ * 2. Mettre à jour le profil communauté d'un signataire existant (PUT /api/sign/:id)
+ *    Utilisé par le formulaire "Inscription Communauté" (VolunteerForm)
+ */
+export const mettreAJourProfil = async (id, data) => {
+  try {
+    const res = await fetch(`${BACKEND_URL}/sign/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    if (res.ok) {
+      return await res.json();
+    }
+
+    // Gérer les erreurs HTTP du backend
+    const errBody = await res.json().catch(() => ({}));
+    throw new Error(errBody.error || `Erreur serveur (${res.status})`);
+  } catch (err) {
+    console.error('[FRONTEND API ERROR] Échec de mise à jour du profil :', err.message);
+    throw err;
+  }
+};
+
+/**
+ * 3. Enregistrer un partage (POST /api/partage)
  */
 export const enregistrerPartage = async (signataireId, plateforme) => {
   try {

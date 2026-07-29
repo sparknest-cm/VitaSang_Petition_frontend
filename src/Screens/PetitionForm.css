@@ -25,10 +25,15 @@
     height: auto;
     min-height: 100vh;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
   .form-split-container {
     grid-template-columns: 1fr;
     height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -64,7 +69,9 @@
 
 @media (max-width: 868px) {
   .form-right-panel {
-    padding: 20px 16px 40px;
+    padding: 0;
+    align-items: flex-end;
+    flex: 1;
   }
 }
 
@@ -82,8 +89,11 @@
 
 @media (max-width: 868px) {
   .maquette-form-card {
-    padding: 20px 16px;
-    border-radius: 20px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 28px 28px 0 0;
+    padding: 28px 20px 48px;
+    box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.08);
   }
 }
 

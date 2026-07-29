@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import Landing from '@screens/Landing';
 import PetitionForm from '@screens/PetitionForm';
 import Confirmation from '@screens/Confirmation';
+import ProgramInfo from '@screens/ProgramInfo';
+import VolunteerForm from '@screens/VolunteerForm';
 import CitySearchModal from '@components/CitySearchModal';
 import { obtenirStatsGlobales } from '@connection/supabase';
 
 function App() {
-  const [screen, setScreen] = useState('landing'); // 'landing' | 'form' | 'confirm'
+  const [screen, setScreen] = useState('landing'); // 'landing' | 'form' | 'confirm' | 'program_info' | 'volunteer_form'
   const [registeredUser, setRegisteredUser] = useState(null);
   
   // Modal Ville State
@@ -39,7 +41,7 @@ function App() {
   // Redirection d'écrans
   const handleNavigate = (targetScreen, userData = null) => {
     if (userData) {
-      setRegisteredUser(userData);
+      setRegisteredUser(prev => ({ ...prev, ...userData }));
     }
     setScreen(targetScreen);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -50,15 +52,38 @@ function App() {
       {screen === 'landing' && (
         <Landing stats={stats} onNavigate={handleNavigate} />
       )}
+      
+      {/* Formulaire Express (Nom, Prénom, Téléphone) */}
       {screen === 'form' && (
         <PetitionForm
+          onNavigate={handleNavigate}
+        />
+      )}
+
+      {/* Confirmation (Remerciements & Partage + CTA Rejoindre le réseau) */}
+      {screen === 'confirm' && (
+        <Confirmation
+          registeredUser={registeredUser}
+          onNavigate={handleNavigate}
+        />
+      )}
+
+      {/* Présentation du Programme VitaSang (Mascotte + Explications) */}
+      {screen === 'program_info' && (
+        <ProgramInfo
+          registeredUser={registeredUser}
+          onNavigate={handleNavigate}
+        />
+      )}
+
+      {/* Inscription Communauté en 2 Étapes (sans redemander Nom, Prénom, Tél) */}
+      {screen === 'volunteer_form' && (
+        <VolunteerForm
+          registeredUser={registeredUser}
           onNavigate={handleNavigate}
           onOpenCityModal={() => setIsCityModalOpen(true)}
           selectedCityObj={selectedCityObj}
         />
-      )}
-      {screen === 'confirm' && (
-        <Confirmation registeredUser={registeredUser} onNavigate={handleNavigate} />
       )}
 
       {/* Modal global de recherche de ville */}

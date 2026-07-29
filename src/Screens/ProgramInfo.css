@@ -1,0 +1,224 @@
+/* ================================================================
+   PROGRAM INFO — LAYOUT MODERNE GRAND ÉCRAN
+   ================================================================ */
+
+.program-screen {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 32px;
+  box-sizing: border-box;
+}
+
+/* ── Bouton retour — haut gauche ── */
+.program-back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+}
+.program-back-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(232, 93, 4, 0.12);
+  transform: translateY(-1px);
+}
+
+/* ── Bouton "Pas maintenant" — haut droite ── */
+.program-skip-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px 7px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+}
+.program-skip-btn:hover {
+  color: var(--text);
+  border-color: var(--text-soft);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transform: translateY(-1px);
+}
+
+/* ── Conteneur principal ── */
+.program-wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding-top: 48px;
+}
+
+/* ── En-tête ── */
+.program-header {
+  text-align: center;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.program-title {
+  font-family: var(--display);
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.16;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+.program-title-accent {
+  color: var(--primary);
+}
+
+.program-intro {
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.72;
+  margin: 0;
+}
+
+/* Mascotte illustrative */
+.program-mascot-wrap {
+  display: flex;
+  justify-content: center;
+  margin: -8px 0 4px;
+}
+
+.program-mascot-svg {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 8px 24px rgba(232, 93, 4, 0.18));
+}
+
+/* Piliers — flex row */
+.program-pillars {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+}
+
+.program-pillar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px 22px;
+  border-radius: 22px;
+  background: var(--surface);
+  border: 1px solid transparent;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition:
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.25s ease;
+  cursor: default;
+}
+
+.program-pillar:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.10);
+  border-color: rgba(232, 93, 4, 0.14);
+}
+
+/* Bulle icône */
+.program-pillar-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icône + titre sur la même ligne */
+.program-pillar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Titre pilier */
+.program-pillar-title {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Description pilier */
+.program-pillar-desc {
+  font-size: 12.5px;
+  color: var(--text-soft);
+  line-height: 1.68;
+  margin: 0;
+}
+
+/* ── CTA ── */
+.program-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ================================================================
+   RESPONSIVE — Mobile / Tablette
+   ================================================================ */
+@media (max-width: 720px) {
+  .program-screen {
+    align-items: flex-start;
+    padding: 80px 20px 56px;
+  }
+
+  .program-pillars {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .program-pillar {
+    padding: 18px 16px;
+    gap: 10px;
+  }
+
+  .program-title {
+    font-size: 26px;
+  }
+
+  .program-wrapper {
+    gap: 32px;
+  }
+}

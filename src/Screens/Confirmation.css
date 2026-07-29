@@ -1,91 +1,287 @@
-/* CONFIRMATION SCREEN — MAQUETTE EXACT COMPACT DESIGN */
+/* ================================================================
+   CONFIRMATION — SPLIT LAYOUT MODERNE
+   ================================================================ */
+
+/* ── Écran plein ── */
 .confirm-screen {
   width: 100vw;
-  height: 100vh;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
   background: var(--bg-gradient);
-  color: var(--text);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.confirm-wrapper {
-  width: 100%;
-  max-width: 460px;
-  margin: 0 auto;
-  padding: 24px 20px;
-  text-align: center;
+  padding: 32px 24px;
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .confirm-screen {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-  }
-  .confirm-wrapper {
-    padding: 32px 16px 48px;
-  }
-}
-
-/* Texte de Remerciement avec espacement accru avant la carte */
-.thankyou-text-wrapper {
-  margin-bottom: 44px;
-}
-
-/* Card de Partage Réduite et Compacte */
-.confirm-clean-card {
-  width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
+/* ── Bouton retour fixé en haut à gauche ── */
+.confirm-back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-soft);
   background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: all 0.2s ease;
+}
+.confirm-back-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(232, 93, 4, 0.12);
+  transform: translateY(-1px);
+}
+
+/* ── Grille 2 colonnes ── */
+.confirm-layout {
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ================================================================
+   PANNEAU GAUCHE
+   ================================================================ */
+.confirm-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+/* Mascotte */
+.confirm-mascot-wrap {
+  margin-bottom: 4px;
+}
+
+.confirm-mascot-svg {
+  width: 90px;
+  height: 90px;
+}
+
+/* Hero texte */
+.confirm-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirm-title {
+  font-family: var(--display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.22;
+  margin: 0;
+}
+
+.confirm-subtitle {
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.68;
+  max-width: 370px;
+  margin: 0;
+}
+
+/* Badge Volontaire */
+.confirm-badge-volunteer {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  width: fit-content;
+}
+
+/* ── Carte Réseau VitaSang — fond transparent ── */
+.confirm-network-card {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  background: transparent;
   border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  border-radius: 24px;
-  padding: 22px 20px;
-  transition: var(--transition-smooth);
+  box-shadow: none;
 }
 
-@media (max-width: 768px) {
-  .confirm-clean-card {
-    padding: 18px 16px;
-    border-radius: 20px;
-  }
+/* ================================================================
+   PANNEAU DROIT — Carte de partage
+   ================================================================ */
+.confirm-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
-/* Lien de parrainage Pill box compact */
-.referral-pill-box {
+.confirm-share-card {
+  width: 100%;
+  background: var(--surface);
+  border-radius: 28px;
+  padding: 28px 24px;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.04),
+    0 12px 40px rgba(232, 93, 4, 0.07),
+    0 0 0 1px rgba(232, 93, 4, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Texte d'en-tête (sans icône) */
+.confirm-share-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.confirm-share-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--display);
+  color: var(--text);
+  margin: 0;
+}
+
+.confirm-share-sub {
+  font-size: 11.5px;
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Pill Box URL */
+.confirm-pill-box {
   display: flex;
   align-items: center;
   gap: 8px;
   background: var(--tint);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 6px 8px 6px 14px;
-  transition: var(--transition-smooth);
+  border-radius: 14px;
+  padding: 8px 8px 8px 14px;
 }
 
-/* Boutons de Partage Réseaux Compacts */
-.social-share-btn {
-  width: 38px;
-  height: 38px;
+.confirm-pill-url {
+  flex: 1;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: all;
+}
+
+/* Séparateur */
+.confirm-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.confirm-divider::before,
+.confirm-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── Boutons sociaux — 4 sur une ligne, icône seulement, bulle ronde ── */
+.confirm-social-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.confirm-social-btn {
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #fff;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  transition: var(--transition-smooth);
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
 }
-.social-share-btn:hover {
-  transform: translateY(-2px) scale(1.06);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+
+.confirm-social-btn:hover {
+  transform: translateY(-3px) scale(1.08);
+  filter: brightness(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+}
+
+.confirm-social-btn:active {
+  transform: translateY(0) scale(1);
+}
+
+/* ================================================================
+   RESPONSIVE — Mobile 1 colonne
+   ================================================================ */
+@media (max-width: 860px) {
+  .confirm-screen {
+    align-items: flex-start;
+    padding: 72px 20px 60px;
+  }
+
+  .confirm-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .confirm-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .confirm-title {
+    font-size: 24px;
+  }
+
+  .confirm-subtitle {
+    max-width: 100%;
+  }
+
+  .confirm-badge-volunteer {
+    align-self: center;
+  }
+
+  .confirm-network-card {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .confirm-right {
+    justify-content: center;
+  }
 }
