@@ -1,6 +1,6 @@
-// Connection directe et exclusive au backend en ligne VitaSang sur Fly.dev
-const rawUrl = 'http://localhost:8080'; // URL du backend VitaSang (à remplacer par l'URL de production si nécessaire)
-export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl}/api`;
+// Connexion au backend VitaSang (Render)
+const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.onrender.com/api';
+export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl.replace(/\/$/, '')}/api`;
 
 /**
  * 1. Enregistrer une signature (POST /api/sign)
