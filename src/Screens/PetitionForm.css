@@ -79,12 +79,18 @@
 .maquette-form-card {
   width: 100%;
   max-width: 460px;
-  background: var(--surface);
-  border: none;
+  background: #FFFFFF;
+  border: 1px solid var(--border);
   border-radius: 28px;
   padding: 28px;
   text-align: left;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 35px rgba(200, 55, 55, 0.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .maquette-form-card {
+    background: var(--surface);
+  }
 }
 
 @media (max-width: 868px) {

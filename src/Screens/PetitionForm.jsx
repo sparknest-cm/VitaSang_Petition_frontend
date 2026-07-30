@@ -58,6 +58,17 @@ export default function PetitionForm({ onNavigate }) {
 
   return (
     <div className="form-screen animate-fade-in">
+
+      {/* Bouton retour fixé en haut à gauche */}
+      {onNavigate && (
+        <button className="confirm-back-btn" onClick={() => onNavigate('landing')}>
+          <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          Accueil
+        </button>
+      )}
+
       <div className="form-split-container">
 
         {/* Côté Gauche : Mascotte & Message Express */}

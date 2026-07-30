@@ -1,4 +1,4 @@
-// Connexion au backend VitaSang (Render)
+// Connexion au backend VitaSang
 const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.onrender.com/api';
 export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl.replace(/\/$/, '')}/api`;
 
@@ -63,22 +63,25 @@ export const mettreAJourProfil = async (id, data) => {
  */
 export const enregistrerPartage = async (signataireId, plateforme) => {
   try {
-    await fetch(`${BACKEND_URL}/partage`, {
+    const res = await fetch(`${BACKEND_URL}/partage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ signataire_id: signataireId, plateforme })
     });
+    if (res.ok) {
+      return await res.json();
+    }
   } catch (err) {
     console.warn('[FRONTEND API WARN] Impossible d\'enregistrer le partage :', err.message);
   }
 };
 
 /**
- * 3. Obtenir les statistiques globales réelles (GET /api/admin/stats)
+ * 4. Obtenir les statistiques globales réelles (GET /api/stats)
  */
 export const obtenirStatsGlobales = async () => {
   try {
-    const res = await fetch(`${BACKEND_URL}/admin/stats`);
+    const res = await fetch(`${BACKEND_URL}/stats`);
     if (res.ok) {
       return await res.json();
     }

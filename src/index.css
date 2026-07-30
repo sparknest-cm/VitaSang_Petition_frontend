@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import './Styles/global.css';
 
 :root {
   --text: #6b6375;
@@ -107,3 +106,5 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+@import './Styles/global.css';

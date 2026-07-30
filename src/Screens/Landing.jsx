@@ -205,19 +205,19 @@ export default function Landing({ stats, onNavigate }) {
             <svg className="animate-float" width="165" height="195" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <linearGradient id="mascotGrad" x1="100" y1="10" x2="100" y2="210" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#FB923C" />
-                  <stop offset="65%" stopColor="#E85D04" />
-                  <stop offset="100%" stopColor="#C2410C" />
+                  <stop offset="0%" stopColor="#E55353" />
+                  <stop offset="65%" stopColor="var(--vs-red-primary, #C83737)" />
+                  <stop offset="100%" stopColor="var(--vs-red-dark, #8C2626)" />
                 </linearGradient>
               </defs>
 
               {/* Main levée gauche */}
-              <ellipse cx="36" cy="105" rx="13" ry="9" fill="#FB923C" transform="rotate(-35 36 105)" />
-              <line x1="58" y1="126" x2="36" y2="105" stroke="#FB923C" strokeWidth="7" strokeLinecap="round" />
+              <ellipse cx="36" cy="105" rx="13" ry="9" fill="#C83737" transform="rotate(-35 36 105)" />
+              <line x1="58" y1="126" x2="36" y2="105" stroke="#C83737" strokeWidth="7" strokeLinecap="round" />
 
               {/* Main levée droite */}
-              <ellipse cx="164" cy="105" rx="13" ry="9" fill="#FB923C" transform="rotate(35 164 105)" />
-              <line x1="142" y1="126" x2="164" y2="105" stroke="#FB923C" strokeWidth="7" strokeLinecap="round" />
+              <ellipse cx="164" cy="105" rx="13" ry="9" fill="#C83737" transform="rotate(35 164 105)" />
+              <line x1="142" y1="126" x2="164" y2="105" stroke="#C83737" strokeWidth="7" strokeLinecap="round" />
 
               {/* Corps goutte */}
               <path d="M100 12C100 12 30 102 30 158a70 70 0 00140 0c0-56-70-146-70-146z" fill="url(#mascotGrad)" />
@@ -230,17 +230,17 @@ export default function Landing({ stats, onNavigate }) {
               <path d="M110 148 Q118 138 126 148" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" />
 
               {/* Joues rosées */}
-              <circle cx="68" cy="158" r="8" fill="#FDBA74" opacity="0.6" />
-              <circle cx="132" cy="158" r="8" fill="#FDBA74" opacity="0.6" />
+              <circle cx="68" cy="158" r="8" fill="#F3C1C1" opacity="0.6" />
+              <circle cx="132" cy="158" r="8" fill="#F3C1C1" opacity="0.6" />
 
               {/* Sourire joyeux */}
-              <path d="M80 166 Q100 190 120 166 C115 186 85 186 80 166Z" fill="#7C2D12" />
-              <path d="M88 176 Q100 188 112 176 Q100 168 88 176Z" fill="#F43F5E" />
+              <path d="M80 166 Q100 190 120 166 C115 186 85 186 80 166Z" fill="#591818" />
+              <path d="M88 176 Q100 188 112 176 Q100 168 88 176Z" fill="#E55353" />
 
               {/* Étincelles */}
-              <text x="38" y="85" fontSize="16" fill="#FDBA74">✦</text>
-              <text x="152" y="85" fontSize="16" fill="#FDBA74">✦</text>
-              <text x="96" y="8" fontSize="14" fill="#FB923C">✨</text>
+              <text x="38" y="85" fontSize="16" fill="#F3C1C1">✦</text>
+              <text x="152" y="85" fontSize="16" fill="#F3C1C1">✦</text>
+              <text x="96" y="8" fontSize="14" fill="#E55353">✨</text>
             </svg>
 
             {/* Badge flottant 2 */}
