@@ -1,5 +1,5 @@
 // Connexion au backend VitaSang
-const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.onrender.com/api';
+const rawUrl = 'https://vitasang-petition-backend.onrender.com';
 export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl.replace(/\/$/, '')}/api`;
 
 /**
