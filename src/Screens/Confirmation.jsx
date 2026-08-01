@@ -69,13 +69,13 @@ export default function Confirmation({ registeredUser, onNavigate }) {
         </button>
       )}
 
-      <div className="confirm-split-container">
+      <div className="confirm-wrapper">
 
         {/* ════════════════════════════════════════════
             CÔTÉ GAUCHE
         ════════════════════════════════════════════ */}
         <div className="confirm-left-panel">
-          <div className="max-w-md space-y-4">
+          <div className="space-y-4">
 
             {/* Mascotte heureuse avec bras levé */}
             <div className="confirm-mascot-wrap">

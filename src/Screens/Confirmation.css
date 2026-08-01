@@ -1,36 +1,25 @@
-/* CONFIRMATION SCREEN — 100% FULLSCREEN UNIFIED ORANGE GRADIENT BACKGROUND (MATCHING LANDING & PETITION FORM) */
+/* CONFIRMATION SCREEN — UNIVERSAL ADAPTIVE RESPONSIVE FOR ALL SCREEN RESOLUTIONS & ZOOMS */
 .confirm-screen {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  min-height: 100dvh;
   background: var(--bg-gradient);
   color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 24px 40px;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
 }
 
-.confirm-split-container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 868px) {
+/* Sur les grands écrans en hauteur, centrer verticalement */
+@media (min-height: 720px) and (min-width: 900px) {
   .confirm-screen {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-  }
-
-  .confirm-split-container {
-    grid-template-columns: 1fr;
-    height: auto;
+    align-items: center;
+    padding: 60px 24px 40px;
   }
 }
 
@@ -62,41 +51,38 @@
   transform: translateY(-1px);
 }
 
-/* Côté Gauche */
-.confirm-left-panel {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px 64px;
-  background: transparent;
+/* Conteneur principal centré (900px max) */
+.confirm-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
+  gap: 36px;
+  align-items: center;
   box-sizing: border-box;
 }
 
-@media (max-width: 868px) {
-  .confirm-left-panel {
-    padding: 88px 24px 20px;
-    align-items: center;
-  }
-  .confirm-left-panel > div {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Côté Gauche */
+.confirm-left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Mascotte */
 .confirm-mascot-wrap {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .confirm-mascot-svg {
-  width: 90px;
-  height: 90px;
+  width: 84px;
+  height: 84px;
+  max-width: 100%;
 }
 
-/* Hero texte */
 .confirm-hero {
   display: flex;
   flex-direction: column;
@@ -105,31 +91,23 @@
 
 .confirm-title {
   font-family: var(--display);
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--text);
   line-height: 1.22;
   margin: 0;
 }
 
-@media (max-width: 868px) {
-  .confirm-title {
-    font-size: 24px;
-  }
-}
-
 .confirm-subtitle {
   font-size: 13.5px;
   color: var(--text-soft);
-  line-height: 1.68;
-  max-width: 370px;
+  line-height: 1.65;
+  max-width: 380px;
   margin: 0;
 }
 
-/* Carte Réseau VitaSang */
 .confirm-network-card {
   width: 100%;
-  max-width: 380px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -137,39 +115,30 @@
   background: transparent;
   border: none;
   box-shadow: none;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 /* Côté Droit : Carte de partage */
 .confirm-right-panel {
-  height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 40px;
-  background: transparent;
+  width: 100%;
   box-sizing: border-box;
-}
-
-@media (max-width: 868px) {
-  .confirm-right-panel {
-    padding: 16px 20px 48px;
-  }
 }
 
 .confirm-share-card {
   width: 100%;
-  max-width: 420px;
+  max-width: 400px;
   background: #FFFFFF !important;
   border: 1px solid var(--border);
-  border-radius: 28px;
-  padding: 28px 24px;
+  border-radius: 24px;
+  padding: 24px 20px;
   box-shadow:
     0 1px 3px rgba(0,0,0,0.04),
-    0 12px 40px rgba(200, 55, 55, 0.07);
+    0 12px 36px rgba(200, 55, 55, 0.07);
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   box-sizing: border-box;
 }
 
@@ -182,11 +151,10 @@
   background: var(--surface) !important;
 }
 
-/* Texte d'en-tête */
 .confirm-share-header-text {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .confirm-share-title {
@@ -204,7 +172,6 @@
   margin: 0;
 }
 
-/* Pill Box URL */
 .confirm-pill-box {
   display: flex;
   align-items: center;
@@ -213,7 +180,7 @@
   background: var(--tint);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 8px 8px 8px 14px;
+  padding: 6px 6px 6px 12px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -231,7 +198,6 @@
   user-select: all;
 }
 
-/* Séparateur */
 .confirm-divider {
   display: flex;
   align-items: center;
@@ -249,7 +215,6 @@
   background: var(--border);
 }
 
-/* Boutons sociaux */
 .confirm-social-row {
   display: flex;
   justify-content: center;
@@ -258,8 +223,8 @@
 }
 
 .confirm-social-btn {
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -278,6 +243,85 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.16);
 }
 
-.confirm-social-btn:active {
-  transform: translateY(0) scale(1);
+/* ================================================================
+   ADAPTATION HAUTEUR MOYENNE (ex: PC Portable 1366x768 ou Zoom 125%)
+   ================================================================ */
+@media (max-height: 750px) {
+  .confirm-screen {
+    padding-top: 72px;
+    padding-bottom: 24px;
+  }
+  .confirm-wrapper {
+    gap: 24px;
+  }
+  .confirm-mascot-svg {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .confirm-title {
+    font-size: 24px !important;
+  }
+  .confirm-share-card {
+    padding: 18px 16px !important;
+    gap: 12px !important;
+  }
+}
+
+/* ================================================================
+   RESPONSIVE — Mobile & Tablette (< 900px)
+   ================================================================ */
+@media (max-width: 900px) {
+  .confirm-screen {
+    padding: 76px 16px 36px;
+    align-items: flex-start;
+  }
+
+  .confirm-back-btn {
+    top: 14px;
+    left: 14px;
+  }
+
+  .confirm-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .confirm-left-panel {
+    align-items: center;
+    text-align: center;
+  }
+
+  .confirm-left-panel > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .confirm-hero {
+    align-items: center;
+  }
+
+  .confirm-title {
+    font-size: 22px !important;
+  }
+
+  .confirm-subtitle {
+    font-size: 12.5px;
+    max-width: 100%;
+  }
+
+  .confirm-mascot-svg {
+    width: 68px !important;
+    height: 68px !important;
+  }
+
+  .confirm-share-card {
+    padding: 18px 16px !important;
+    border-radius: 20px;
+    gap: 14px;
+    max-width: 100%;
+  }
 }
