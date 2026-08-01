@@ -69,15 +69,13 @@ export default function Confirmation({ registeredUser, onNavigate }) {
         </button>
       )}
 
-      <div className="confirm-wrapper">
+      <div className="confirm-split-container">
 
-        {/* ════════════════════════════════════════════
-            CÔTÉ GAUCHE
-        ════════════════════════════════════════════ */}
+        {/* CÔTÉ GAUCHE */}
         <div className="confirm-left-panel">
-          <div className="space-y-4">
+          <div className="confirm-left-content">
 
-            {/* Mascotte heureuse avec bras levé */}
+            {/* Mascotte heureuse centrée horizontalement */}
             <div className="confirm-mascot-wrap">
               <svg className="animate-float confirm-mascot-svg" viewBox="0 0 260 245" fill="none">
                 <path
@@ -139,10 +137,10 @@ export default function Confirmation({ registeredUser, onNavigate }) {
             {/* Invitation Réseau VitaSang */}
             {!isVolunteer && (
               <div className="confirm-network-card animate-fade-in">
-                <h3 className="font-display font-bold text-sm" style={{ color: 'var(--text)', margin: 0 }}>
+                <h3 className="font-display font-bold text-sm" style={{ color: 'var(--text)', margin: 0, textAlign: 'center' }}>
                   ❤️ Allez encore plus loin pour sauver des vies
                 </h3>
-                <p style={{ fontSize: '12px', color: 'var(--text-soft)', lineHeight: '1.65', margin: 0 }}>
+                <p style={{ fontSize: '12px', color: 'var(--text-soft)', lineHeight: '1.65', margin: 0, textAlign: 'center' }}>
                   Rejoignez le Réseau VitaSang et soyez alerté en priorité lors d'une urgence sanguine dans votre ville.
                 </p>
                 <button
@@ -158,9 +156,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
           </div>
         </div>
 
-        {/* ════════════════════════════════════════════
-            CÔTÉ DROIT — Carte de partage
-        ════════════════════════════════════════════ */}
+        {/* CÔTÉ DROIT — Carte de partage flottante complète avec 4 bordures */}
         <div className="confirm-right-panel">
           <div className="confirm-share-card">
 
@@ -187,7 +183,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
             {/* Séparateur */}
             <div className="confirm-divider"><span>Partager</span></div>
 
-            {/* 4 boutons icône seulement */}
+            {/* 4 boutons sociaux */}
             <div className="confirm-social-row">
               {socialButtons.map(({ id, color, title, icon }) => (
                 <button

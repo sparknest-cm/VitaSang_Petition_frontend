@@ -1,29 +1,35 @@
-/* CONFIRMATION SCREEN — UNIVERSAL ADAPTIVE RESPONSIVE FOR ALL SCREEN RESOLUTIONS & ZOOMS */
+/* CONFIRMATION SCREEN — BLOC DE PARTAGE AGRANDI, MAJESTUEUX ET PARFAITEMENT AÉRÉ */
 .confirm-screen {
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
+  margin: 0;
+  padding: 84px clamp(20px, 5vw, 56px) 48px !important;
   background: var(--bg-gradient);
   color: var(--text);
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 80px 24px 40px;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Sur les grands écrans en hauteur, centrer verticalement */
-@media (min-height: 720px) and (min-width: 900px) {
-  .confirm-screen {
-    align-items: center;
-    padding: 60px 24px 40px;
-  }
+.confirm-split-container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(36px, 5vw, 56px);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  box-sizing: border-box;
 }
 
-/* Bouton retour */
+/* ── Bouton Accueil / Retour repensé ── */
 .confirm-back-btn {
   position: fixed;
   top: 20px;
@@ -31,83 +37,100 @@
   z-index: 100;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 7px 14px 7px 10px;
+  gap: 8px;
+  padding: 9px 18px 9px 14px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text);
   background: var(--surface);
   border: 1px solid var(--border);
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: all 0.22s ease;
 }
 
 .confirm-back-btn:hover {
   color: var(--primary);
   border-color: var(--primary);
-  box-shadow: 0 4px 14px rgba(232, 93, 4, 0.12);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(200, 55, 55, 0.14);
+  transform: translateY(-2px);
 }
 
-/* Conteneur principal centré (900px max) */
-.confirm-wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
-  gap: 36px;
-  align-items: center;
-  box-sizing: border-box;
+.confirm-back-btn:active {
+  transform: translateY(0);
 }
 
-/* Côté Gauche */
+/* ── Côté Gauche : Mascotte & Titre centrés ── */
 .confirm-left-panel {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
+.confirm-left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  gap: 18px;
+}
+
 .confirm-mascot-wrap {
-  margin-bottom: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 8px;
+  text-align: center;
 }
 
 .confirm-mascot-svg {
-  width: 84px;
-  height: 84px;
-  max-width: 100%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .confirm-hero {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .confirm-title {
   font-family: var(--display);
-  font-size: 28px;
+  font-size: clamp(24px, 3.2vw, 30px);
   font-weight: 700;
   color: var(--text);
   line-height: 1.22;
   margin: 0;
+  text-align: center;
 }
 
 .confirm-subtitle {
-  font-size: 13.5px;
+  font-size: clamp(12.5px, 1.5vw, 14px);
   color: var(--text-soft);
   line-height: 1.65;
-  max-width: 380px;
-  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .confirm-network-card {
   width: 100%;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -115,31 +138,37 @@
   background: transparent;
   border: none;
   box-shadow: none;
-  margin-top: 4px;
+  margin: 12px auto 0;
+  align-items: center;
+  text-align: center;
 }
 
-/* Côté Droit : Carte de partage */
+/* ── Côté Droit : Carte de partage "Un lien, des vies sauvées." AGRANDIE ET SPACIEUSE ── */
 .confirm-right-panel {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .confirm-share-card {
   width: 100%;
-  max-width: 400px;
+  max-width: 480px;
   background: #FFFFFF !important;
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: 24px 20px;
+  border: 1px solid var(--border) !important;
+  border-radius: 28px !important;
+  padding: clamp(28px, 3.5vw, 36px) clamp(24px, 3vw, 32px);
   box-shadow:
-    0 1px 3px rgba(0,0,0,0.04),
-    0 12px 36px rgba(200, 55, 55, 0.07);
+    0 4px 6px rgba(0,0,0,0.02),
+    0 16px 48px rgba(200, 55, 55, 0.09) !important;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 22px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -154,11 +183,12 @@
 .confirm-share-header-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
+  text-align: left;
 }
 
 .confirm-share-title {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   font-family: var(--display);
   color: var(--text);
@@ -166,21 +196,22 @@
 }
 
 .confirm-share-sub {
-  font-size: 11.5px;
+  font-size: 13px;
   color: var(--text-soft);
-  line-height: 1.6;
+  line-height: 1.65;
   margin: 0;
 }
 
+/* Pill Box URL Agrandie */
 .confirm-pill-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
   background: var(--tint);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 6px 6px 6px 12px;
+  border-radius: 18px;
+  padding: 10px 10px 10px 16px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -189,7 +220,7 @@
   flex: 1;
   min-width: 0;
   font-family: ui-monospace, 'Cascadia Code', monospace;
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 700;
   color: var(--primary);
   overflow: hidden;
@@ -201,11 +232,11 @@
 .confirm-divider {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   color: var(--text-soft);
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 .confirm-divider::before,
 .confirm-divider::after {
@@ -215,16 +246,17 @@
   background: var(--border);
 }
 
+/* Boutons de réseaux sociaux optimisés (52px) */
 .confirm-social-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
 }
 
 .confirm-social-btn {
-  width: 44px;
-  height: 44px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -233,95 +265,143 @@
   border: none;
   cursor: pointer;
   flex-shrink: 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .confirm-social-btn:hover {
   transform: translateY(-3px) scale(1.08);
   filter: brightness(1.1);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.confirm-social-btn:active {
+  transform: translateY(0) scale(1);
 }
 
 /* ================================================================
-   ADAPTATION HAUTEUR MOYENNE (ex: PC Portable 1366x768 ou Zoom 125%)
+   RESPONSIVE TABLETTE (< 868px)
    ================================================================ */
-@media (max-height: 750px) {
+@media (max-width: 868px) {
   .confirm-screen {
-    padding-top: 72px;
-    padding-bottom: 24px;
-  }
-  .confirm-wrapper {
-    gap: 24px;
-  }
-  .confirm-mascot-svg {
-    width: 64px !important;
-    height: 64px !important;
-  }
-  .confirm-title {
-    font-size: 24px !important;
-  }
-  .confirm-share-card {
-    padding: 18px 16px !important;
-    gap: 12px !important;
-  }
-}
-
-/* ================================================================
-   RESPONSIVE — Mobile & Tablette (< 900px)
-   ================================================================ */
-@media (max-width: 900px) {
-  .confirm-screen {
-    padding: 76px 16px 36px;
+    padding: 76px 20px 40px !important;
     align-items: flex-start;
   }
 
-  .confirm-back-btn {
-    top: 14px;
-    left: 14px;
-  }
-
-  .confirm-wrapper {
+  .confirm-split-container {
     grid-template-columns: 1fr;
-    max-width: 460px;
-    gap: 20px;
+    max-width: 440px;
+    width: 100%;
+    gap: 26px;
     margin: 0 auto;
   }
 
   .confirm-left-panel {
-    align-items: center;
-    text-align: center;
-  }
-
-  .confirm-left-panel > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .confirm-hero {
-    align-items: center;
-  }
-
-  .confirm-title {
-    font-size: 22px !important;
-  }
-
-  .confirm-subtitle {
-    font-size: 12.5px;
-    max-width: 100%;
+    padding: 0;
   }
 
   .confirm-mascot-svg {
-    width: 68px !important;
-    height: 68px !important;
+    width: 80px;
+    height: 80px;
+  }
+
+  .confirm-right-panel {
+    width: 100%;
+    padding: 0 0 36px;
+    box-sizing: border-box;
   }
 
   .confirm-share-card {
-    padding: 18px 16px !important;
-    border-radius: 20px;
-    gap: 14px;
-    max-width: 100%;
+    max-width: 420px;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 26px !important;
+    padding: 26px 22px;
+    gap: 18px;
+  }
+
+  .confirm-social-btn {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ================================================================
+   ADAPTATION OPTIMALE POUR ÉCRANS COMPACTS (360x640, 360x740, 375x667)
+   ================================================================ */
+@media (max-width: 480px) {
+  .confirm-screen {
+    padding: 72px 16px 36px !important;
+  }
+
+  .confirm-split-container {
+    max-width: 380px;
+    width: 100%;
+    gap: 22px;
+    margin: 0 auto;
+  }
+
+  .confirm-mascot-svg {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .confirm-title {
+    font-size: 21px !important;
+  }
+
+  .confirm-subtitle {
+    font-size: 12.5px !important;
+  }
+
+  .confirm-share-card {
+    max-width: 350px !important;
+    width: 94% !important;
+    margin: 0 auto !important;
+    border-radius: 24px !important;
+    padding: 24px 20px !important;
+    gap: 18px !important;
+    box-shadow: 0 8px 32px rgba(200, 55, 55, 0.09) !important;
+  }
+
+  .confirm-share-title {
+    font-size: 16.5px !important;
+  }
+
+  .confirm-pill-box {
+    padding: 8px 8px 8px 12px !important;
+  }
+
+  .confirm-pill-url {
+    font-size: 10.5px !important;
+  }
+
+  .confirm-social-btn {
+    width: 44px !important;
+    height: 44px !important;
+  }
+}
+
+/* ================================================================
+   ADAPTATION ÉCRANS ULTRA-ÉTROITS (< 360px)
+   ================================================================ */
+@media (max-width: 360px) {
+  .confirm-screen {
+    padding: 68px 12px 28px !important;
+  }
+
+  .confirm-split-container {
+    max-width: 320px;
+    gap: 16px;
+  }
+
+  .confirm-share-card {
+    max-width: 305px !important;
+    width: 92% !important;
+    padding: 20px 16px !important;
+  }
+
+  .confirm-title {
+    font-size: 19px !important;
   }
 }
