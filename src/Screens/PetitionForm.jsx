@@ -141,8 +141,9 @@ export default function PetitionForm({ onNavigate }) {
               <div>
                 <label className="form-label-left">Numéro de Téléphone *</label>
                 <div className="flex gap-2 items-center">
-                  <span className="px-3 py-2.5 rounded-xl bg-[var(--tint)] border border-[var(--border)] text-xs font-bold text-[var(--text)] shrink-0">
-                    🇨🇲 +237
+                  <span className="px-3 py-2.5 rounded-xl bg-[var(--tint)] border border-[var(--border)] text-xs font-bold text-[var(--text)] shrink-0 flex items-center gap-1.5">
+                    <span style={{ fontSize: '15px' }}>🇨🇲</span>
+                    <span>+237</span>
                   </span>
                   <input
                     required
