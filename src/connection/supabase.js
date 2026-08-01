@@ -1,5 +1,5 @@
-// Connexion au backend VitaSang
-const rawUrl = 'https://vitasang-petition-backend.onrender.com';
+// Connexion au backend VitaSang (Vercel Serverless API)
+const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.vercel.app/api';
 export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl.replace(/\/$/, '')}/api`;
 
 /**
