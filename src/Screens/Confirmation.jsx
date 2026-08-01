@@ -11,10 +11,12 @@ export default function Confirmation({ registeredUser, onNavigate }) {
 
   const BASE_FRONTEND_URL = typeof window !== 'undefined' && window.location.origin.includes('localhost')
     ? 'https://vitasang.org'
-    : window.location.origin;
+    : (typeof window !== 'undefined' ? window.location.origin : 'https://vitasang.org');
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText(`${BASE_FRONTEND_URL}/?ref=${referralCode}`);
+    if (navigator?.clipboard?.writeText) {
+      navigator.clipboard.writeText(`${BASE_FRONTEND_URL}/?ref=${referralCode}`);
+    }
     setCopied(true);
     if (registeredUser?.id) enregistrerPartage(registeredUser.id, 'lien_copie');
     setTimeout(() => setCopied(false), 2500);
@@ -57,37 +59,31 @@ export default function Confirmation({ registeredUser, onNavigate }) {
   return (
     <div className="confirm-screen animate-fade-in">
 
-      {/* ── Bouton retour fixé en haut à gauche ── */}
+      {/* ── Bouton retour fixé ── */}
       {onNavigate && (
         <button className="confirm-back-btn" onClick={() => onNavigate('landing')}>
           <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
             <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Accueil
+          <span>Accueil</span>
         </button>
       )}
 
       <div className="confirm-layout">
 
-        {/* ════════════════════════════════════════════
-            PANNEAU GAUCHE
-        ════════════════════════════════════════════ */}
+        {/* PANNEAU GAUCHE */}
         <div className="confirm-left">
 
           {/* Mascotte heureuse avec bras levé */}
           <div className="confirm-mascot-wrap">
             <svg className="animate-float confirm-mascot-svg" viewBox="0 0 260 245" fill="none">
-
-              {/* Bras levé (dessiné avant le corps, visible uniquement la partie haute) */}
               <path
                 d="M148 140 Q210 95 198 48"
                 stroke="#C94B00"
                 strokeWidth="22"
                 strokeLinecap="round"
               />
-              {/* Poing (main) */}
               <ellipse cx="196" cy="40" rx="20" ry="17" fill="#E85D04" />
-              {/* Pouce levé */}
               <path
                 d="M187 40 Q182 24 189 18 Q197 12 201 24"
                 stroke="rgba(255,255,255,0.9)"
@@ -95,16 +91,13 @@ export default function Confirmation({ registeredUser, onNavigate }) {
                 strokeLinecap="round"
                 fill="none"
               />
-              {/* Doigts */}
               <path d="M185 44 Q183 34 188 31" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
               <path d="M190 46 Q188 35 194 33" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
 
-              {/* Corps goutte de sang */}
               <path
                 d="M100 12C100 12 32 102 32 155a68 68 0 00136 0c0-53-68-143-68-143z"
                 fill="var(--primary)"
               />
-              {/* Reflet */}
               <path
                 d="M78 55 Q68 90 66 125"
                 stroke="rgba(255,255,255,0.18)"
@@ -113,15 +106,12 @@ export default function Confirmation({ registeredUser, onNavigate }) {
                 fill="none"
               />
 
-              {/* Joues rosées */}
               <ellipse cx="68" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
               <ellipse cx="132" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
 
-              {/* Yeux heureux (arcs ^) */}
               <path d="M74 150 Q83 140 92 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
               <path d="M108 150 Q117 140 126 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
 
-              {/* Grand sourire */}
               <path d="M80 174 Q100 196 120 174" stroke="white" strokeWidth="5.5" strokeLinecap="round" fill="none" />
             </svg>
           </div>
@@ -143,7 +133,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
             </div>
           )}
 
-          {/* Invitation Réseau VitaSang — uniquement pour les signataires simples */}
+          {/* Invitation Réseau VitaSang */}
           {!isVolunteer && (
             <div className="confirm-network-card animate-fade-in">
               <h3 className="font-display font-bold text-sm" style={{ color: 'var(--text)', margin: 0 }}>
@@ -163,9 +153,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
           )}
         </div>
 
-        {/* ════════════════════════════════════════════
-            PANNEAU DROIT — Carte de partage
-        ════════════════════════════════════════════ */}
+        {/* PANNEAU DROIT — Carte de partage */}
         <div className="confirm-right">
           <div className="confirm-share-card">
 
@@ -182,7 +170,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
               <span className="confirm-pill-url" title={shareUrl}>{shareUrl}</span>
               <button
                 onClick={handleCopyLink}
-                className="btn-primary"
+                className="btn-primary shrink-0"
                 style={{ borderRadius: '30px', padding: '6px 14px', fontSize: '11px', whiteSpace: 'nowrap' }}
               >
                 {copied ? '✓ Copié !' : 'Copier'}
@@ -192,7 +180,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
             {/* Séparateur */}
             <div className="confirm-divider"><span>Partager</span></div>
 
-            {/* 4 boutons icône seulement, sur une ligne */}
+            {/* 4 boutons icône seulement */}
             <div className="confirm-social-row">
               {socialButtons.map(({ id, color, title, icon }) => (
                 <button
