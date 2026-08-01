@@ -1,13 +1,15 @@
 /* ================================================================
-   CONFIRMATION — SPLIT LAYOUT MODERNE ET RESPONSIVE UNIVERSEL
+   CONFIRMATION — LAYOUT NET, PUR BLANC ET RESPONSIVE UNIVERSEL
    ================================================================ */
 
-/* ── Écran plein sans overflow ni effet de zoom/coupure ── */
+/* ── Écran plein universel sans coupure ni zoom ── */
 .confirm-screen {
   width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   background: var(--bg-gradient);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: clamp(24px, 4vh, 48px) clamp(16px, 3vw, 32px);
@@ -31,7 +33,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--text-soft);
-  background: var(--surface, #FFFFFF);
+  background: #FFFFFF;
   border: 1px solid var(--border);
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
@@ -50,8 +52,8 @@
   width: 100%;
   max-width: 920px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
-  gap: clamp(24px, 4vw, 48px);
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 380px);
+  gap: clamp(20px, 4vw, 44px);
   align-items: center;
   box-sizing: border-box;
   margin: 0 auto;
@@ -64,18 +66,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
+  gap: 16px;
   width: 100%;
 }
 
 /* Mascotte */
 .confirm-mascot-wrap {
   margin-bottom: 2px;
+  display: flex;
 }
 
 .confirm-mascot-svg {
-  width: clamp(70px, 8vw, 90px);
-  height: clamp(70px, 8vw, 90px);
+  width: clamp(65px, 8vw, 88px);
+  height: clamp(65px, 8vw, 88px);
   max-width: 100%;
 }
 
@@ -84,11 +87,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
 
 .confirm-title {
   font-family: var(--display);
-  font-size: clamp(22px, 3vw, 28px);
+  font-size: clamp(21px, 3.2vw, 28px);
   font-weight: 700;
   color: var(--text);
   line-height: 1.22;
@@ -97,10 +101,10 @@
 }
 
 .confirm-subtitle {
-  font-size: clamp(12.5px, 1.5vw, 13.5px);
+  font-size: clamp(12px, 1.5vw, 13.5px);
   color: var(--text-soft);
   line-height: 1.65;
-  max-width: 370px;
+  max-width: 380px;
   margin: 0;
 }
 
@@ -110,7 +114,7 @@
   max-width: 380px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   padding: 0;
   background: transparent;
   border: none;
@@ -118,7 +122,7 @@
 }
 
 /* ================================================================
-   PANNEAU DROIT — Carte de partage (FOND BLANC EN THÈME CLAIR)
+   PANNEAU DROIT — Carte de partage (FOND BLANC PUR EN THÈME CLAIR)
    ================================================================ */
 .confirm-right {
   display: flex;
@@ -129,26 +133,26 @@
 
 .confirm-share-card {
   width: 100%;
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   border: 1px solid var(--border);
-  border-radius: 24px;
-  padding: clamp(18px, 2.5vw, 24px);
+  border-radius: 22px;
+  padding: clamp(16px, 2.5vw, 24px);
   box-shadow:
-    0 1px 3px rgba(0,0,0,0.04),
-    0 12px 40px rgba(200, 55, 55, 0.07);
+    0 2px 4px rgba(0,0,0,0.03),
+    0 12px 36px rgba(200, 55, 55, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
   .confirm-share-card {
-    background: var(--surface);
+    background: var(--surface) !important;
   }
 }
 [data-theme='dark'] .confirm-share-card {
-  background: var(--surface);
+  background: var(--surface) !important;
 }
 
 /* Texte d'en-tête */
@@ -159,7 +163,7 @@
 }
 
 .confirm-share-title {
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 700;
   font-family: var(--display);
   color: var(--text);
@@ -169,7 +173,7 @@
 .confirm-share-sub {
   font-size: 11.5px;
   color: var(--text-soft);
-  line-height: 1.6;
+  line-height: 1.58;
   margin: 0;
 }
 
@@ -181,8 +185,8 @@
   gap: 8px;
   background: var(--tint);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 6px 6px 6px 12px;
+  border-radius: 12px;
+  padding: 5px 5px 5px 10px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -206,8 +210,8 @@
   align-items: center;
   gap: 10px;
   color: var(--text-soft);
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 10.5px;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 .confirm-divider::before,
@@ -227,8 +231,8 @@
 }
 
 .confirm-social-btn {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -252,40 +256,51 @@
 }
 
 /* ================================================================
-   RESPONSIVE UNIVERSEL — Tablette et Mobile (< 860px)
+   RESPONSIVE UNIVERSEL — Mobile & Tablette (< 768px)
    ================================================================ */
-@media (max-width: 860px) {
+@media (max-width: 768px) {
   .confirm-screen {
     align-items: flex-start;
-    padding: 68px 16px 40px;
+    padding: 60px 14px 32px;
   }
 
   .confirm-back-btn {
-    top: 14px;
-    left: 14px;
+    top: 12px;
+    left: 12px;
     padding: 6px 12px 6px 8px;
     font-size: 11px;
   }
 
   .confirm-layout {
     grid-template-columns: 1fr;
-    gap: 24px;
-    max-width: 460px;
+    gap: 20px;
+    max-width: 440px;
     margin: 0 auto;
   }
 
   .confirm-left {
     align-items: center;
     text-align: center;
-    gap: 16px;
+    gap: 14px;
   }
 
   .confirm-hero {
     align-items: center;
   }
 
+  .confirm-title {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
   .confirm-subtitle {
+    font-size: 12px;
     max-width: 100%;
+  }
+
+  .confirm-mascot-svg {
+    width: 68px;
+    height: 68px;
   }
 
   .confirm-network-card {
@@ -297,16 +312,26 @@
   .confirm-right {
     justify-content: center;
   }
+
+  .confirm-share-card {
+    padding: 16px 14px;
+    border-radius: 18px;
+    gap: 12px;
+  }
 }
 
-/* Ultra-small screens (< 360px) */
+/* Écrans ultra-étroits (< 360px) */
 @media (max-width: 360px) {
   .confirm-screen {
-    padding: 60px 12px 30px;
+    padding: 56px 10px 24px;
+  }
+
+  .confirm-title {
+    font-size: 18px;
   }
 
   .confirm-social-btn {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
   }
 }
