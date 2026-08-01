@@ -69,92 +69,99 @@ export default function Confirmation({ registeredUser, onNavigate }) {
         </button>
       )}
 
-      <div className="confirm-layout">
+      <div className="confirm-split-container">
 
-        {/* PANNEAU GAUCHE */}
-        <div className="confirm-left">
+        {/* ════════════════════════════════════════════
+            CÔTÉ GAUCHE
+        ════════════════════════════════════════════ */}
+        <div className="confirm-left-panel">
+          <div className="max-w-md space-y-4">
 
-          {/* Mascotte heureuse avec bras levé */}
-          <div className="confirm-mascot-wrap">
-            <svg className="animate-float confirm-mascot-svg" viewBox="0 0 260 245" fill="none">
-              <path
-                d="M148 140 Q210 95 198 48"
-                stroke="#C94B00"
-                strokeWidth="22"
-                strokeLinecap="round"
-              />
-              <ellipse cx="196" cy="40" rx="20" ry="17" fill="#E85D04" />
-              <path
-                d="M187 40 Q182 24 189 18 Q197 12 201 24"
-                stroke="rgba(255,255,255,0.9)"
-                strokeWidth="3.5"
-                strokeLinecap="round"
-                fill="none"
-              />
-              <path d="M185 44 Q183 34 188 31" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-              <path d="M190 46 Q188 35 194 33" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+            {/* Mascotte heureuse avec bras levé */}
+            <div className="confirm-mascot-wrap">
+              <svg className="animate-float confirm-mascot-svg" viewBox="0 0 260 245" fill="none">
+                <path
+                  d="M148 140 Q210 95 198 48"
+                  stroke="#C94B00"
+                  strokeWidth="22"
+                  strokeLinecap="round"
+                />
+                <ellipse cx="196" cy="40" rx="20" ry="17" fill="#E85D04" />
+                <path
+                  d="M187 40 Q182 24 189 18 Q197 12 201 24"
+                  stroke="rgba(255,255,255,0.9)"
+                  strokeWidth="3.5"
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <path d="M185 44 Q183 34 188 31" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+                <path d="M190 46 Q188 35 194 33" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
 
-              <path
-                d="M100 12C100 12 32 102 32 155a68 68 0 00136 0c0-53-68-143-68-143z"
-                fill="var(--primary)"
-              />
-              <path
-                d="M78 55 Q68 90 66 125"
-                stroke="rgba(255,255,255,0.18)"
-                strokeWidth="10"
-                strokeLinecap="round"
-                fill="none"
-              />
+                <path
+                  d="M100 12C100 12 32 102 32 155a68 68 0 00136 0c0-53-68-143-68-143z"
+                  fill="var(--primary)"
+                />
+                <path
+                  d="M78 55 Q68 90 66 125"
+                  stroke="rgba(255,255,255,0.18)"
+                  strokeWidth="10"
+                  strokeLinecap="round"
+                  fill="none"
+                />
 
-              <ellipse cx="68" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
-              <ellipse cx="132" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
+                <ellipse cx="68" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
+                <ellipse cx="132" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
 
-              <path d="M74 150 Q83 140 92 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
-              <path d="M108 150 Q117 140 126 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+                <path d="M74 150 Q83 140 92 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+                <path d="M108 150 Q117 140 126 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
 
-              <path d="M80 174 Q100 196 120 174" stroke="white" strokeWidth="5.5" strokeLinecap="round" fill="none" />
-            </svg>
+                <path d="M80 174 Q100 196 120 174" stroke="white" strokeWidth="5.5" strokeLinecap="round" fill="none" />
+              </svg>
+            </div>
+
+            {/* Remerciement */}
+            {isVolunteer ? (
+              <div className="confirm-hero">
+                <h1 className="confirm-title">Félicitations, {userFirstName}&nbsp;🎉</h1>
+                <p className="confirm-subtitle">
+                  Votre profil de Donateur Volontaire est actif. Vous serez contacté en priorité lors d'une urgence sanguine dans votre région. Merci d'être là.
+                </p>
+              </div>
+            ) : (
+              <div className="confirm-hero">
+                <h1 className="confirm-title">Merci, {userFirstName}&nbsp;🎉</h1>
+                <p className="confirm-subtitle">
+                  Votre signature a été enregistrée. Chaque nom compte, et le vôtre vient d'apporter de l'espoir à des familles qui en ont besoin.
+                </p>
+              </div>
+            )}
+
+            {/* Invitation Réseau VitaSang */}
+            {!isVolunteer && (
+              <div className="confirm-network-card animate-fade-in">
+                <h3 className="font-display font-bold text-sm" style={{ color: 'var(--text)', margin: 0 }}>
+                  ❤️ Allez encore plus loin pour sauver des vies
+                </h3>
+                <p style={{ fontSize: '12px', color: 'var(--text-soft)', lineHeight: '1.65', margin: 0 }}>
+                  Rejoignez le Réseau VitaSang et soyez alerté en priorité lors d'une urgence sanguine dans votre ville.
+                </p>
+                <button
+                  onClick={() => onNavigate('program_info', registeredUser)}
+                  className="btn-primary w-full cursor-pointer"
+                  style={{ borderRadius: '30px', padding: '11px 20px', fontSize: '13px', fontWeight: 700 }}
+                >
+                  Rejoindre le Réseau VitaSang &rarr;
+                </button>
+              </div>
+            )}
+
           </div>
-
-          {/* Remerciement */}
-          {isVolunteer ? (
-            <div className="confirm-hero">
-              <h1 className="confirm-title">Félicitations, {userFirstName}&nbsp;🎉</h1>
-              <p className="confirm-subtitle">
-                Votre profil de Donateur Volontaire est actif. Vous serez contacté en priorité lors d'une urgence sanguine dans votre région. Merci d'être là.
-              </p>
-            </div>
-          ) : (
-            <div className="confirm-hero">
-              <h1 className="confirm-title">Merci, {userFirstName}&nbsp;🎉</h1>
-              <p className="confirm-subtitle">
-                Votre signature a été enregistrée. Chaque nom compte, et le vôtre vient d'apporter de l'espoir à des familles qui en ont besoin.
-              </p>
-            </div>
-          )}
-
-          {/* Invitation Réseau VitaSang */}
-          {!isVolunteer && (
-            <div className="confirm-network-card animate-fade-in">
-              <h3 className="font-display font-bold text-sm" style={{ color: 'var(--text)', margin: 0 }}>
-                ❤️ Allez encore plus loin pour sauver des vies
-              </h3>
-              <p style={{ fontSize: '12px', color: 'var(--text-soft)', lineHeight: '1.65', margin: 0 }}>
-                Rejoignez le Réseau VitaSang et soyez alerté en priorité lors d'une urgence sanguine dans votre ville.
-              </p>
-              <button
-                onClick={() => onNavigate('program_info', registeredUser)}
-                className="btn-primary w-full cursor-pointer"
-                style={{ borderRadius: '30px', padding: '11px 20px', fontSize: '13px', fontWeight: 700 }}
-              >
-                Rejoindre le Réseau VitaSang &rarr;
-              </button>
-            </div>
-          )}
         </div>
 
-        {/* PANNEAU DROIT — Carte de partage */}
-        <div className="confirm-right">
+        {/* ════════════════════════════════════════════
+            CÔTÉ DROIT — Carte de partage
+        ════════════════════════════════════════════ */}
+        <div className="confirm-right-panel">
           <div className="confirm-share-card">
 
             {/* Message touchant */}
