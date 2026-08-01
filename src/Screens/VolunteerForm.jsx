@@ -160,11 +160,11 @@ export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityMo
                 <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white ${step === 1 ? 'bg-[var(--primary)]' : 'bg-[var(--green)]'}`}>
                   {step === 1 ? '1' : '✓'}
                 </div>
-                <span className="text-xs font-semibold text-[var(--text)]">1. Localisation & Profil</span>
+                <span className="text-xs font-semibold text-[var(--text)]">Localisation & Profil</span>
               </div>
               <div className="h-px flex-1 bg-[var(--border)]"></div>
               <div className="flex items-center gap-2 flex-1 justify-end">
-                <span className={`text-xs font-semibold ${step === 2 ? 'text-[var(--text)]' : 'text-[var(--text-soft)]'}`}>2. Engagement</span>
+                <span className={`text-xs font-semibold ${step === 2 ? 'text-[var(--text)]' : 'text-[var(--text-soft)]'}`}>Engagement</span>
                 <div className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${step === 2 ? 'bg-[var(--primary)] text-white' : 'border border-[var(--border)] text-[var(--text-soft)] bg-[var(--tint)]'}`}>
                   2
                 </div>

@@ -2,7 +2,7 @@
    CONFIRMATION — SPLIT LAYOUT MODERNE ET RESPONSIVE UNIVERSEL
    ================================================================ */
 
-/* ── Écran plein sans overflow horizontal ── */
+/* ── Écran plein sans overflow ni effet de zoom/coupure ── */
 .confirm-screen {
   width: 100%;
   min-height: 100vh;
@@ -10,9 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px 24px;
+  padding: clamp(24px, 4vh, 48px) clamp(16px, 3vw, 32px);
   box-sizing: border-box;
   overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -30,7 +31,7 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--text-soft);
-  background: var(--surface);
+  background: var(--surface, #FFFFFF);
   border: 1px solid var(--border);
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
@@ -47,12 +48,13 @@
 /* ── Grille 2 colonnes responsive ── */
 .confirm-layout {
   width: 100%;
-  max-width: 960px;
+  max-width: 920px;
   display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 50px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  gap: clamp(24px, 4vw, 48px);
   align-items: center;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* ================================================================
@@ -62,17 +64,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 18px;
+  width: 100%;
 }
 
 /* Mascotte */
 .confirm-mascot-wrap {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .confirm-mascot-svg {
-  width: 90px;
-  height: 90px;
+  width: clamp(70px, 8vw, 90px);
+  height: clamp(70px, 8vw, 90px);
   max-width: 100%;
 }
 
@@ -80,12 +83,12 @@
 .confirm-hero {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .confirm-title {
   font-family: var(--display);
-  font-size: 30px;
+  font-size: clamp(22px, 3vw, 28px);
   font-weight: 700;
   color: var(--text);
   line-height: 1.22;
@@ -94,9 +97,9 @@
 }
 
 .confirm-subtitle {
-  font-size: 13.5px;
+  font-size: clamp(12.5px, 1.5vw, 13.5px);
   color: var(--text-soft);
-  line-height: 1.68;
+  line-height: 1.65;
   max-width: 370px;
   margin: 0;
 }
@@ -115,7 +118,7 @@
 }
 
 /* ================================================================
-   PANNEAU DROIT — Carte de partage
+   PANNEAU DROIT — Carte de partage (FOND BLANC EN THÈME CLAIR)
    ================================================================ */
 .confirm-right {
   display: flex;
@@ -126,10 +129,10 @@
 
 .confirm-share-card {
   width: 100%;
-  background: var(--surface, #FFFFFF);
+  background: #FFFFFF;
   border: 1px solid var(--border);
   border-radius: 24px;
-  padding: 24px 20px;
+  padding: clamp(18px, 2.5vw, 24px);
   box-shadow:
     0 1px 3px rgba(0,0,0,0.04),
     0 12px 40px rgba(200, 55, 55, 0.07);
@@ -139,11 +142,20 @@
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  .confirm-share-card {
+    background: var(--surface);
+  }
+}
+[data-theme='dark'] .confirm-share-card {
+  background: var(--surface);
+}
+
 /* Texte d'en-tête */
 .confirm-share-header-text {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .confirm-share-title {
@@ -272,17 +284,7 @@
     align-items: center;
   }
 
-  .confirm-mascot-svg {
-    width: 80px;
-    height: 80px;
-  }
-
-  .confirm-title {
-    font-size: 22px;
-  }
-
   .confirm-subtitle {
-    font-size: 12.5px;
     max-width: 100%;
   }
 
@@ -295,22 +297,12 @@
   .confirm-right {
     justify-content: center;
   }
-
-  .confirm-share-card {
-    padding: 20px 16px;
-    border-radius: 20px;
-    gap: 14px;
-  }
 }
 
 /* Ultra-small screens (< 360px) */
 @media (max-width: 360px) {
   .confirm-screen {
     padding: 60px 12px 30px;
-  }
-
-  .confirm-title {
-    font-size: 20px;
   }
 
   .confirm-social-btn {

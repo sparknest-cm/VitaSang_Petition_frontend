@@ -1,6 +1,7 @@
 .donor-avatars-container {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .avatar-bubble {
@@ -34,4 +35,13 @@
 .avatar-bubble:hover {
   transform: translateY(-3px) scale(1.05);
   z-index: 20 !important;
+}
+
+@media (max-width: 480px) {
+  .avatar-bubble {
+    width: 36px;
+    height: 36px;
+    font-size: 11px;
+    margin-left: -10px;
+  }
 }
