@@ -3,7 +3,7 @@ import { signerPetition } from '../connection/supabase';
 import HappyMascotte from '../assets/HappyMascotte.png';
 import './PetitionForm.css';
 
-export default function PetitionForm({ onNavigate }) {
+export default function PetitionForm({ onNavigate, onOpenPrivacy }) {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
@@ -173,8 +173,17 @@ export default function PetitionForm({ onNavigate }) {
                 )}
               </button>
 
-              <p className="text-[10px] text-[var(--text-soft)] text-center mt-2">
-                En signant, vous acceptez de soutenir l'initiative citoyenne VitaSang.
+              <p className="text-[10px] text-[var(--text-soft)] text-center mt-2 leading-relaxed">
+                En signant, vous soutenez l'initiative VitaSang.{' '}
+                {onOpenPrivacy && (
+                  <button
+                    type="button"
+                    onClick={onOpenPrivacy}
+                    className="underline hover:text-[var(--primary)] transition-colors cursor-pointer bg-transparent border-none p-0 inline font-medium text-[var(--text)]"
+                  >
+                    Protection des données & Confidentialité
+                  </button>
+                )}
               </p>
             </form>
           </div>

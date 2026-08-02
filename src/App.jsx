@@ -5,6 +5,7 @@ import Confirmation from '@screens/Confirmation';
 import ProgramInfo from '@screens/ProgramInfo';
 import VolunteerForm from '@screens/VolunteerForm';
 import CitySearchModal from '@components/CitySearchModal';
+import PrivacyModal from '@components/PrivacyModal';
 import { obtenirStatsGlobales } from '@connection/supabase';
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
   // Modal Ville State
   const [isCityModalOpen, setIsCityModalOpen] = useState(false);
   const [selectedCityObj, setSelectedCityObj] = useState(null);
+
+  // Modal Confidentialité & Protection des données State
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   // Stats globales pour la Landing page
   const [stats, setStats] = useState({
@@ -50,13 +54,18 @@ function App() {
   return (
     <>
       {screen === 'landing' && (
-        <Landing stats={stats} onNavigate={handleNavigate} />
+        <Landing
+          stats={stats}
+          onNavigate={handleNavigate}
+          onOpenPrivacy={() => setIsPrivacyModalOpen(true)}
+        />
       )}
       
       {/* Formulaire Express (Nom, Prénom, Téléphone) */}
       {screen === 'form' && (
         <PetitionForm
           onNavigate={handleNavigate}
+          onOpenPrivacy={() => setIsPrivacyModalOpen(true)}
         />
       )}
 
@@ -83,6 +92,7 @@ function App() {
           onNavigate={handleNavigate}
           onOpenCityModal={() => setIsCityModalOpen(true)}
           selectedCityObj={selectedCityObj}
+          onOpenPrivacy={() => setIsPrivacyModalOpen(true)}
         />
       )}
 
@@ -94,6 +104,12 @@ function App() {
           setSelectedCityObj(city);
           setIsCityModalOpen(false);
         }}
+      />
+
+      {/* Modal global de Politique de Confidentialité & Protection des données */}
+      <PrivacyModal
+        isOpen={isPrivacyModalOpen}
+        onClose={() => setIsPrivacyModalOpen(false)}
       />
     </>
   );

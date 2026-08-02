@@ -7,7 +7,7 @@ import './PetitionForm.css';
 const REGIONS = Array.from(new Set(countryData.map(c => c.region))).sort();
 const BLOOD_GROUPS = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
 
-export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityModal, selectedCityObj }) {
+export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityModal, selectedCityObj, onOpenPrivacy }) {
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -369,6 +369,19 @@ export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityMo
                     )}
                   </button>
                 </div>
+
+                {onOpenPrivacy && (
+                  <p className="text-[10px] text-[var(--text-soft)] text-center mt-2 leading-relaxed">
+                    Vos données de santé sont protégées et ne seront jamais commercialisées.{' '}
+                    <button
+                      type="button"
+                      onClick={onOpenPrivacy}
+                      className="underline hover:text-[var(--primary)] transition-colors cursor-pointer bg-transparent border-none p-0 inline font-medium text-[var(--text)]"
+                    >
+                      Politique de confidentialité
+                    </button>
+                  </p>
+                )}
               </form>
             )}
 

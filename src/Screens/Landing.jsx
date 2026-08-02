@@ -4,7 +4,7 @@ import HappyMascotte from '../assets/HappyMascotte.png';
 import tiredMascotte from '../assets/tiredMascotte.png';
 import './Landing.css';
 
-export default function Landing({ stats, onNavigate }) {
+export default function Landing({ stats, onNavigate, onOpenPrivacy }) {
   const [loading, setLoading] = useState(false);
 
   const handleStart = () => {
