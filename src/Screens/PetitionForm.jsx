@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { signerPetition } from '../connection/supabase';
+import HappyMascotte from '../assets/HappyMascotte.png';
 import './PetitionForm.css';
 
 export default function PetitionForm({ onNavigate }) {
@@ -63,7 +64,7 @@ export default function PetitionForm({ onNavigate }) {
       {onNavigate && (
         <button className="confirm-back-btn" onClick={() => onNavigate('landing')}>
           <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           Accueil
         </button>
@@ -73,7 +74,7 @@ export default function PetitionForm({ onNavigate }) {
 
         {/* Côté Gauche : Mascotte & Message Express */}
         <div className="form-left-panel">
-          <div className="max-w-xs space-y-4 text-center md:text-left">
+          <div className="max-w-sm space-y-4 text-center md:text-left">
             <div>
               <span className="inline-block text-[10px] font-semibold tracking-widest uppercase px-3 py-1 rounded-full bg-[var(--tint)] text-[var(--primary)] mb-3">
                 Pétition Citoyenne VitaSang
@@ -86,13 +87,13 @@ export default function PetitionForm({ onNavigate }) {
               </p>
             </div>
 
-            <div className="flex justify-center pt-2">
-              <svg className="animate-float" width="180" height="210" viewBox="0 0 200 230" fill="none">
-                <path d="M100 10C100 10 30 100 30 155a70 70 0 00140 0c0-55-70-145-70-145z" fill="var(--primary)" />
-                <circle cx="82" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-                <circle cx="118" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-                <path d="M85 170 Q100 185 115 170" stroke="var(--tint)" strokeWidth="5" strokeLinecap="round" fill="none" />
-              </svg>
+            <div className="flex justify-center pt-3">
+              <img
+                src={HappyMascotte}
+                alt="Mascotte VitaSang"
+                className="animate-float"
+                style={{ width: '220px', height: 'auto', filter: 'drop-shadow(0 14px 28px rgba(200, 55, 55, 0.18))' }}
+              />
             </div>
           </div>
         </div>

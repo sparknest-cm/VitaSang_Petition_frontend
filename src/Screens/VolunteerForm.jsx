@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import countryData from '../Json/Country.json';
 import { mettreAJourProfil } from '../connection/supabase';
+import confirmeMascotte from '../assets/confirmeMascotte.png';
 import './PetitionForm.css';
 
 const REGIONS = Array.from(new Set(countryData.map(c => c.region))).sort();
@@ -116,7 +117,7 @@ export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityMo
       {onNavigate && (
         <button className="confirm-back-btn" onClick={() => onNavigate('confirm', registeredUser)}>
           <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           Retour
         </button>
@@ -140,12 +141,12 @@ export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityMo
             </div>
 
             <div className="flex justify-center pt-2">
-              <svg className="animate-float" width="160" height="190" viewBox="0 0 200 230" fill="none">
-                <path d="M100 10C100 10 30 100 30 155a70 70 0 00140 0c0-55-70-145-70-145z" fill="var(--primary)" />
-                <circle cx="82" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-                <circle cx="118" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-                <path d="M85 170 Q100 185 115 170" stroke="var(--tint)" strokeWidth="5" strokeLinecap="round" fill="none" />
-              </svg>
+              <img
+                src={confirmeMascotte}
+                alt="Mascotte Donateur Volontaire"
+                className="animate-float"
+                style={{ width: '150px', height: 'auto', filter: 'drop-shadow(0 12px 24px rgba(200, 55, 55, 0.15))' }}
+              />
             </div>
           </div>
         </div>
@@ -153,7 +154,7 @@ export default function VolunteerForm({ registeredUser, onNavigate, onOpenCityMo
         {/* Côté Droit : Formulaire en 2 Étapes */}
         <div className="form-right-panel">
           <div className="maquette-form-card">
-            
+
             {/* Indicateur de Progression (Étape 1 sur 2 / Étape 2 sur 2) */}
             <div className="flex items-center gap-3 mb-5">
               <div className="flex items-center gap-2 flex-1">

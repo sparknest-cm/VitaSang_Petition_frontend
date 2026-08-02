@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import DonorAvatars from '../components/DonorAvatars';
+import HappyMascotte from '../assets/HappyMascotte.png';
+import tiredMascotte from '../assets/tiredMascotte.png';
 import './Landing.css';
 
 export default function Landing({ stats, onNavigate }) {
@@ -58,13 +60,13 @@ export default function Landing({ stats, onNavigate }) {
         {/* Côté Droit : Mascotte & Cartes Flottantes Adaptatives */}
         <div className="landing-right-panel">
           <div className="mascot-stage">
-            {/* Mascotte Goutte de Sang au Centre */}
-            <svg className="animate-float" width="200" height="230" viewBox="0 0 200 230" fill="none">
-              <path d="M100 10C100 10 30 100 30 155a70 70 0 00140 0c0-55-70-145-70-145z" fill="var(--primary)" />
-              <circle cx="82" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-              <circle cx="118" cy="150" r="6" fill="var(--tint)" opacity="0.9" />
-              <path d="M85 170 Q100 185 115 170" stroke="var(--tint)" strokeWidth="5" strokeLinecap="round" fill="none" opacity="0.9" />
-            </svg>
+            {/* Mascotte Joyeuse au Centre */}
+            <img
+              src={HappyMascotte}
+              alt="Mascotte Joyeuse VitaSang"
+              className="animate-float"
+              style={{ width: '220px', height: 'auto', filter: 'drop-shadow(0 12px 24px rgba(200, 55, 55, 0.15))' }}
+            />
 
             {/* Carte 1 : Signatures */}
             <div className="stat-float-card animate-float-d1 stat-card-1">
@@ -201,47 +203,13 @@ export default function Landing({ stats, onNavigate }) {
               <span>Réseau Sécurisé</span>
             </div>
 
-            {/* Mascotte Goutte de Sang Expressive avec Mains Levées */}
-            <svg className="animate-float" width="165" height="195" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="mascotGrad" x1="100" y1="10" x2="100" y2="210" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#E55353" />
-                  <stop offset="65%" stopColor="var(--vs-red-primary, #C83737)" />
-                  <stop offset="100%" stopColor="var(--vs-red-dark, #8C2626)" />
-                </linearGradient>
-              </defs>
-
-              {/* Main levée gauche */}
-              <ellipse cx="36" cy="105" rx="13" ry="9" fill="#C83737" transform="rotate(-35 36 105)" />
-              <line x1="58" y1="126" x2="36" y2="105" stroke="#C83737" strokeWidth="7" strokeLinecap="round" />
-
-              {/* Main levée droite */}
-              <ellipse cx="164" cy="105" rx="13" ry="9" fill="#C83737" transform="rotate(35 164 105)" />
-              <line x1="142" y1="126" x2="164" y2="105" stroke="#C83737" strokeWidth="7" strokeLinecap="round" />
-
-              {/* Corps goutte */}
-              <path d="M100 12C100 12 30 102 30 158a70 70 0 00140 0c0-56-70-146-70-146z" fill="url(#mascotGrad)" />
-
-              {/* Reflet brillant */}
-              <ellipse cx="70" cy="135" rx="15" ry="22" fill="#FFFFFF" opacity="0.25" transform="rotate(-18 70 135)" />
-
-              {/* Yeux joyeux en arc (souriants) */}
-              <path d="M74 148 Q82 138 90 148" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" />
-              <path d="M110 148 Q118 138 126 148" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" fill="none" />
-
-              {/* Joues rosées */}
-              <circle cx="68" cy="158" r="8" fill="#F3C1C1" opacity="0.6" />
-              <circle cx="132" cy="158" r="8" fill="#F3C1C1" opacity="0.6" />
-
-              {/* Sourire joyeux */}
-              <path d="M80 166 Q100 190 120 166 C115 186 85 186 80 166Z" fill="#591818" />
-              <path d="M88 176 Q100 188 112 176 Q100 168 88 176Z" fill="#E55353" />
-
-              {/* Étincelles */}
-              <text x="38" y="85" fontSize="16" fill="#F3C1C1">✦</text>
-              <text x="152" y="85" fontSize="16" fill="#F3C1C1">✦</text>
-              <text x="96" y="8" fontSize="14" fill="#E55353">✨</text>
-            </svg>
+            {/* Mascotte Épuisée / Urgence */}
+            <img
+              src={tiredMascotte}
+              alt="Mascotte Urgence VitaSang"
+              className="animate-float"
+              style={{ width: '210px', height: 'auto', filter: 'drop-shadow(0 12px 24px rgba(200, 55, 55, 0.15))' }}
+            />
 
             {/* Badge flottant 2 */}
             <div className="learn-more-badge badge-bottom-right animate-float-d2">

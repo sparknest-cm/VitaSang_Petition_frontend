@@ -1,3 +1,4 @@
+import HappyMascotte from '../assets/HappyMascotte.png';
 import './ProgramInfo.css';
 
 export default function ProgramInfo({ registeredUser, onNavigate }) {
@@ -77,26 +78,12 @@ export default function ProgramInfo({ registeredUser, onNavigate }) {
 
           {/* Mascotte illustrative — entre le titre et l'intro */}
           <div className="program-mascot-wrap">
-            <svg className="animate-float program-mascot-svg" viewBox="0 0 260 245" fill="none">
-              {/* Bras levé */}
-              <path d="M148 140 Q210 95 198 48" stroke="#C94B00" strokeWidth="22" strokeLinecap="round" />
-              <ellipse cx="196" cy="40" rx="20" ry="17" fill="#E85D04" />
-              <path d="M187 40 Q182 24 189 18 Q197 12 201 24" stroke="rgba(255,255,255,0.9)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
-              <path d="M185 44 Q183 34 188 31" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-              <path d="M190 46 Q188 35 194 33" stroke="rgba(255,255,255,0.6)" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
-              {/* Corps */}
-              <path d="M100 12C100 12 32 102 32 155a68 68 0 00136 0c0-53-68-143-68-143z" fill="var(--primary)" />
-              {/* Reflet */}
-              <path d="M78 55 Q68 90 66 125" stroke="rgba(255,255,255,0.18)" strokeWidth="10" strokeLinecap="round" fill="none" />
-              {/* Joues */}
-              <ellipse cx="68" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
-              <ellipse cx="132" cy="170" rx="12" ry="8" fill="rgba(255,200,150,0.35)" />
-              {/* Yeux heureux */}
-              <path d="M74 150 Q83 140 92 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
-              <path d="M108 150 Q117 140 126 150" stroke="white" strokeWidth="4.5" strokeLinecap="round" fill="none" />
-              {/* Sourire */}
-              <path d="M80 174 Q100 196 120 174" stroke="white" strokeWidth="5.5" strokeLinecap="round" fill="none" />
-            </svg>
+            <img
+              src={HappyMascotte}
+              alt="Mascotte Réseau VitaSang"
+              className="animate-float program-mascot-img"
+              style={{ width: '100px', height: 'auto', filter: 'drop-shadow(0 10px 20px rgba(200, 55, 55, 0.12))' }}
+            />
           </div>
 
           <p className="program-intro">
