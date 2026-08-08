@@ -4,14 +4,24 @@ import PetitionForm from '@screens/PetitionForm';
 import Confirmation from '@screens/Confirmation';
 import ProgramInfo from '@screens/ProgramInfo';
 import VolunteerForm from '@screens/VolunteerForm';
+import MonProfil from '@screens/MonProfil';
 import CitySearchModal from '@components/CitySearchModal';
 import PrivacyModal from '@components/PrivacyModal';
 import { obtenirStatsGlobales } from '@connection/supabase';
+import { initMetaPixel, trackMetaPixelEvent } from './utils/metaPixel';
 
 function App() {
-  const [screen, setScreen] = useState('landing'); // 'landing' | 'form' | 'confirm' | 'program_info' | 'volunteer_form'
+  const [screen, setScreen] = useState('landing'); // 'landing' | 'form' | 'confirm' | 'program_info' | 'volunteer_form' | 'mon_profil'
   const [registeredUser, setRegisteredUser] = useState(null);
   
+  // Initialisation du Pixel Meta si présent
+  useEffect(() => {
+    const metaPixelId = import.meta.env.VITE_META_PIXEL_ID;
+    if (metaPixelId) {
+      initMetaPixel(metaPixelId);
+    }
+  }, []);
+
   // Modal Ville State
   const [isCityModalOpen, setIsCityModalOpen] = useState(false);
   const [selectedCityObj, setSelectedCityObj] = useState(null);
@@ -42,11 +52,20 @@ function App() {
       .catch(err => console.error('Erreur chargement stats:', err));
   }, [screen]);
 
-  // Redirection d'écrans
+  // Redirection d'écrans & Suivi anonyme Meta Pixel
   const handleNavigate = (targetScreen, userData = null) => {
     if (userData) {
       setRegisteredUser(prev => ({ ...prev, ...userData }));
     }
+
+    if (targetScreen === 'program_info') {
+      trackMetaPixelEvent('ViewContent', { content_name: 'En savoir plus VitaSang', page: 'program_info' });
+    } else if (targetScreen === 'mon_profil') {
+      trackMetaPixelEvent('ViewContent', { content_name: 'Espace Profil Citoyen', page: 'mon_profil' });
+    } else if (targetScreen === 'form') {
+      trackMetaPixelEvent('ViewContent', { content_name: 'Formulaire Signature Petition', page: 'form' });
+    }
+
     setScreen(targetScreen);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -93,6 +112,13 @@ function App() {
           onOpenCityModal={() => setIsCityModalOpen(true)}
           selectedCityObj={selectedCityObj}
           onOpenPrivacy={() => setIsPrivacyModalOpen(true)}
+        />
+      )}
+
+      {/* Modification du profil citoyen (OTP dual-canal) */}
+      {screen === 'mon_profil' && (
+        <MonProfil
+          onNavigate={handleNavigate}
         />
       )}
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { signerPetition } from '../connection/supabase';
 import HappyMascotte from '../assets/HappyMascotte.png';
 import './PetitionForm.css';
@@ -6,6 +7,7 @@ import './PetitionForm.css';
 export default function PetitionForm({ onNavigate, onOpenPrivacy }) {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [duplicatePhone, setDuplicatePhone] = useState(null);
 
   // Express Form State (Uniquement Nom, Prénom, Téléphone)
   const [formData, setFormData] = useState({
@@ -50,7 +52,11 @@ export default function PetitionForm({ onNavigate, onOpenPrivacy }) {
       const fullUserData = { ...result, ...formData };
       onNavigate('confirm', fullUserData);
     } catch (err) {
-      setErrorMsg(err.message || 'Une erreur est survenue lors de la signature.');
+      if (err.code === 'DUPLICATE_PHONE' || (err.message && err.message.toLowerCase().includes('déjà'))) {
+        setDuplicatePhone(formData.telephone.replace(/\s/g, '').trim());
+      } else {
+        setErrorMsg(err.message || 'Une erreur est survenue lors de la signature.');
+      }
     } finally {
       setLoading(false);
     }
@@ -190,6 +196,49 @@ export default function PetitionForm({ onNavigate, onOpenPrivacy }) {
         </div>
 
       </div>
+
+      {/* MODAL DE BLOCAGE NUMÉRO DÉJÀ EXISTANT (Bottom Sheet Drawer en bas de l'écran) */}
+      {duplicatePhone && createPortal(
+        <div className="fixed inset-0 z-[999999] bg-black/70 backdrop-blur-md flex items-end justify-center animate-fade-in p-0 sm:p-4" onClick={() => setDuplicatePhone(null)}>
+          <div className="w-full max-w-md bg-[var(--surface)] border-t sm:border border-[var(--border)] rounded-t-3xl sm:rounded-3xl p-6 shadow-2xl space-y-4 text-center animate-slide-up" onClick={e => e.stopPropagation()}>
+            
+            {/* Barre de drag tactile */}
+            <div className="w-12 h-1.5 bg-[var(--border)] rounded-full mx-auto opacity-60 mb-1"></div>
+
+            {/* Badge Icône d'avertissement centré */}
+            <div className="w-14 h-14 rounded-2xl bg-red-100 dark:bg-red-950/60 text-[#C83737] mx-auto flex items-center justify-center font-bold text-2xl shadow-sm">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+
+            {/* Titre & Message explicatif centré */}
+            <div className="space-y-2 text-center">
+              <h3 className="font-display font-bold text-xl text-[var(--text)] leading-snug">
+                Numéro Déjà Enregistré
+              </h3>
+              <p className="text-xs text-[var(--text-soft)] leading-relaxed max-w-xs mx-auto text-center">
+                Le numéro de téléphone <strong className="text-[var(--text)] font-mono font-bold">+237 {duplicatePhone}</strong> a déjà été utilisé pour signer la pétition citoyenne VitaSang.
+              </p>
+            </div>
+
+            {/* Bouton de Fermeture */}
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={() => setDuplicatePhone(null)}
+                className="btn-primary w-full shadow-md cursor-pointer"
+                style={{ borderRadius: '30px', padding: '12px 24px', fontSize: '13px', background: '#C83737' }}
+              >
+                Compris, fermer
+              </button>
+            </div>
+
+          </div>
+        </div>,
+        document.body
+      )}
+
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DonorAvatars from '../components/DonorAvatars';
 import HappyMascotte from '../assets/HappyMascotte.png';
 import tiredMascotte from '../assets/tiredMascotte.png';
+import confirmeMascotte from '../assets/confirmeMascotte.png';
 import './Landing.css';
 
 export default function Landing({ stats, onNavigate, onOpenPrivacy }) {
@@ -248,9 +249,66 @@ export default function Landing({ stats, onNavigate, onOpenPrivacy }) {
           </div>
         </div>
 
+        {/* ═══════════════════════════════════════════
+            SECTION : Déjà inscrit ? Mise à jour du profil citoyen
+        ════════════════════════════════════════════ */}
+        <div className="w-full flex justify-center text-center mt-16 md:mt-24 mb-1">
+          <span className="landing-why-badge">Espace Citoyen</span>
+        </div>
+
+        <div className="landing-update-profile-card">
+          {/* Côté Gauche : Texte & Lien */}
+          <div className="update-profile-content text-left max-w-xl">
+            <h3 className="font-display text-2xl md:text-3xl font-bold text-[var(--text)] leading-snug mb-3 mt-0">
+              Déjà inscrit ? Mettez à jour votre <span style={{ color: 'var(--primary)' }}>profil citoyen</span>
+            </h3>
+
+
+
+
+
+            {/* Mascotte sur petit écran uniquement (entre le titre et la description) */}
+            <div className="update-profile-mascot-mobile md:hidden flex justify-center my-4">
+              <img
+                src={confirmeMascotte}
+                alt="Mascotte VitaSang Profil"
+                className="animate-float"
+                style={{ width: '130px', height: 'auto', filter: 'drop-shadow(0 12px 24px rgba(200, 55, 55, 0.15))' }}
+              />
+            </div>
+
+            <p className="text-xs md:text-sm text-[var(--text-soft)] leading-relaxed mb-5">
+              Vous avez déjà signé la pétition ou rejoint la communauté ? Vos données personnelles et médicales sont protégées et restent sous votre contrôle. Mettez à jour votre ville, votre groupe sanguin ou votre disponibilité d'urgence à tout moment en toute sécurité.
+            </p>
+
+            <div>
+              <button
+                type="button"
+                onClick={() => onNavigate('mon_profil')}
+                className="underline hover:text-[var(--primary)] transition-colors cursor-pointer bg-transparent border-none p-0 inline font-medium text-[var(--text-soft)] text-xs"
+              >
+                Modifier mon profil citoyen
+              </button>
+            </div>
+          </div>
+
+          {/* Côté Droit : Mascotte sur grand écran uniquement */}
+          <div className="update-profile-mascot-desktop hidden md:flex">
+            <img
+              src={confirmeMascotte}
+              alt="Mascotte VitaSang Profil"
+              className="animate-float"
+              style={{ width: '160px', height: 'auto', filter: 'drop-shadow(0 12px 24px rgba(200, 55, 55, 0.15))' }}
+            />
+          </div>
+        </div>
+
+
+
       </section>
 
     </div>
   );
 }
+
 

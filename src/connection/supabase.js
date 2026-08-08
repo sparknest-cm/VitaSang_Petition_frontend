@@ -1,5 +1,5 @@
 // Connexion au backend VitaSang (Vercel Serverless API)
-const rawUrl = import.meta.env.VITE_BACKEND_URL || 'https://vitasang-petition-backend.vercel.app/api';
+const rawUrl = 'http://localhost:5000'; // Remplacez par l'URL de votre backend en production
 export const BACKEND_URL = rawUrl.endsWith('/api') ? rawUrl : `${rawUrl.replace(/\/$/, '')}/api`;
 
 /**
@@ -16,21 +16,21 @@ export const signerPetition = async (data) => {
     if (res.ok) {
       return await res.json();
     }
-  } catch (err) {
-    console.error('[FRONTEND API ERROR] Échec de communication avec le backend :', err.message);
-  }
 
-  // Secours temporaire
-  return {
-    id: crypto.randomUUID(),
-    nom: data.nom,
-    prenom: data.prenom,
-    telephone: data.telephone,
-    ville: data.ville,
-    region: data.region,
-    code_parrainage: 'VS-' + Math.random().toString(36).substring(2, 8).toUpperCase(),
-    date_creation: new Date().toISOString()
-  };
+    let errData = {};
+    try {
+      errData = await res.json();
+    } catch { /* empty */ }
+
+    const err = new Error(errData.error || 'Erreur lors de la signature');
+    err.code = errData.code;
+    err.status = res.status;
+    throw err;
+  } catch (err) {
+    if (err.code || err.status) throw err;
+    console.error('[FRONTEND API ERROR] Échec de communication avec le backend :', err.message);
+    throw err;
+  }
 };
 
 /**
@@ -99,6 +99,66 @@ export const obtenirStatsGlobales = async () => {
 };
 
 /**
+ * 5. Générer un code OTP (POST /api/otp/generer)
+ *    identifiant : email OU numéro de téléphone du signataire
+ */
+export const genererOtpApi = async (identifiant) => {
+  const res = await fetch(`${BACKEND_URL}/otp/generer`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ identifiant }),
+  });
+
+  const body = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    throw new Error(body.error || `Erreur serveur (${res.status})`);
+  }
+
+  return body; // { success, canal, message, canaux_utilises }
+};
+
+/**
+ * 6. Vérifier un code OTP (POST /api/otp/verifier)
+ *    Retourne le profil pré-rempli du signataire si le code est valide.
+ */
+export const verifierOtpApi = async (identifiant, code_otp) => {
+  const res = await fetch(`${BACKEND_URL}/otp/verifier`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ identifiant, code_otp }),
+  });
+
+  const body = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    throw new Error(body.error || `Erreur serveur (${res.status})`);
+  }
+
+  return body; // { success, message, profil: { signataire_id, nom, prenom, ... } }
+};
+
+/**
+ * 7. Sauvegarder les modifications du profil (POST /api/otp/sauvegarder)
+ *    Le code OTP est re-vérifié côté serveur avant la mise à jour.
+ */
+export const sauvegarderProfilApi = async (identifiant, code_otp, donneesModifiees) => {
+  const res = await fetch(`${BACKEND_URL}/otp/sauvegarder`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ identifiant, code_otp, ...donneesModifiees }),
+  });
+
+  const body = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    throw new Error(body.error || `Erreur serveur (${res.status})`);
+  }
+
+  return body; // { success, message, confirmation_email }
+};
+
+/**
  * 4. Obtenir la liste des signataires réels (GET /api/admin/signatures)
  */
 export const obtenirSignataires = async (filtres = {}) => {
@@ -113,3 +173,4 @@ export const obtenirSignataires = async (filtres = {}) => {
   }
   return [];
 };
+

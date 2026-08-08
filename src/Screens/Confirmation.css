@@ -146,13 +146,21 @@
 /* ── Côté Droit : Carte de partage "Un lien, des vies sauvées." AGRANDIE ET SPACIEUSE ── */
 .confirm-right-panel {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 14px;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+.confirm-modify-link-wrap {
+  text-align: center;
+  width: 100%;
+}
+
 
 .confirm-share-card {
   width: 100%;

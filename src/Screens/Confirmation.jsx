@@ -7,8 +7,8 @@ export default function Confirmation({ registeredUser, onNavigate }) {
   const [copied, setCopied] = useState(false);
 
   const userFirstName = registeredUser?.prenom || 'Cher Citoyen';
-  const referralCode  = registeredUser?.code_parrainage || 'VS-A3F9K';
-  const isVolunteer   = registeredUser?.isVolunteer || false;
+  const referralCode = registeredUser?.code_parrainage || 'VS-A3F9K';
+  const isVolunteer = registeredUser?.isVolunteer || false;
 
   const BASE_FRONTEND_URL = typeof window !== 'undefined' && window.location.origin.includes('localhost')
     ? 'https://vitasang.org'
@@ -26,11 +26,11 @@ export default function Confirmation({ registeredUser, onNavigate }) {
   const handleShare = (plateforme) => {
     if (registeredUser?.id) enregistrerPartage(registeredUser.id, plateforme);
     const link = encodeURIComponent(`${BASE_FRONTEND_URL}/?ref=${referralCode}&utm_source=${plateforme}`);
-    const msg  = encodeURIComponent("Rejoins-moi pour signer la pétition citoyenne VITA SANG et aidons à bâtir un réseau de donneurs de sang solide au Cameroun ! 🇨🇲 ❤️");
+    const msg = encodeURIComponent("Rejoins-moi pour signer la pétition citoyenne VITA SANG et aidons à bâtir un réseau de donneurs de sang solide au Cameroun ! 🇨🇲 ❤️");
     const urls = {
       whatsapp: `https://api.whatsapp.com/send?text=${msg}%20${link}`,
       facebook: `https://www.facebook.com/sharer/sharer.php?u=${link}`,
-      x:        `https://x.com/intent/tweet?text=${msg}&url=${link}`,
+      x: `https://x.com/intent/tweet?text=${msg}&url=${link}`,
       linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${link}`,
     };
     if (urls[plateforme]) window.open(urls[plateforme], '_blank');
@@ -64,7 +64,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
       {onNavigate && (
         <button className="confirm-back-btn" onClick={() => onNavigate('landing')}>
           <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2" viewBox="0 0 24 24">
-            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <span>Accueil</span>
         </button>
@@ -125,7 +125,7 @@ export default function Confirmation({ registeredUser, onNavigate }) {
           </div>
         </div>
 
-        {/* CÔTÉ DROIT — Carte de partage flottante complète avec 4 bordures */}
+        {/* CÔTÉ DROIT — Carte de partage flottante complète */}
         <div className="confirm-right-panel">
           <div className="confirm-share-card">
 
@@ -167,10 +167,21 @@ export default function Confirmation({ registeredUser, onNavigate }) {
               ))}
             </div>
 
+            {/* Lien sous forme de texte en dessous du modal de partage (en colonne avec gap) */}
+            <div className="confirm-modify-link-wrap">
+              <button
+                type="button"
+                onClick={() => onNavigate('mon_profil')}
+                className="underline hover:text-[var(--primary)] transition-colors cursor-pointer bg-transparent border-none p-0 inline font-medium text-[var(--text-soft)] text-xs"
+              >
+                Modifier mes informations citoyennes
+              </button>
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   );
 }
+

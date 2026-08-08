@@ -253,7 +253,7 @@
   }
 
   .privacy-drawer-body {
-    padding: 4px 20px 16px 20px;
+    padding: 4px 20px 14px 20px;
     gap: 12px;
   }
 
@@ -265,7 +265,8 @@
     padding: 14px 16px;
   }
 
+  /* Padding augmenté pour dégager le bouton de validation du bas de l'écran mobile */
   .privacy-drawer-footer {
-    padding: 10px 20px 18px 20px;
+    padding: 14px 20px calc(28px + env(safe-area-inset-bottom, 0px)) 20px;
   }
 }

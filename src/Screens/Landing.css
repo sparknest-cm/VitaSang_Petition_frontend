@@ -470,3 +470,48 @@
     right: 10px;
   }
 }
+
+/* ═══════════════════════════════════════════
+   SECTION : MISE À JOUR PROFIL CITOYEN (TRANSPARENTE)
+════════════════════════════════════════════ */
+.landing-update-profile-card {
+  margin: 12px auto 0;
+  width: 100%;
+  max-width: 1000px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 8px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  box-shadow: none;
+}
+
+
+
+
+.update-profile-mascot-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .landing-update-profile-card {
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .update-profile-content {
+    text-align: center;
+  }
+
+  .update-profile-mascot-desktop {
+    display: none !important;
+  }
+}
